@@ -1,0 +1,76 @@
+# mkdocs.yml
+
+# Project information
+site_name: Universal Algebra .org
+site_url: https://universalalgebra.org
+site_author: William DeMeo
+site_description: >-
+  Exploring problems and progress in universal algebra, with a focus on the
+  Finite Lattice Representation Problem (FLRP).
+
+# Repository
+repo_name: universalalgebra/universalalgebra.org
+repo_url: https://github.com/universalalgebra/universalalgebra.org
+
+# Copyright
+copyright: Copyright &copy; 2025 William DeMeo
+
+# Theme Configuration
+theme:
+  name: material
+  logo: assets/l7.png
+  favicon: assets/l7.png
+  palette:
+    - scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+    - content.code.copy
+    - admonition.details
+
+# Navigation Menu
+nav:
+  - Home: index.md
+  - Finite Lattice Representation Problem:
+    - Overview: flrp/index.md
+    - Core Concepts: flrp/concepts.md
+    - History & Pálfy-Pudlák: flrp/history.md
+    - Current Status & Counterexamples: flrp/status.md
+    - Tame Congruence Theory: flrp/tct.md
+    - Partial Results & Related Problems: flrp/related.md
+    - Current & Future Research: flrp/research.md
+
+# Custom JavaScript for Gemini Button
+extra_javascript:
+  - js/gemini-features.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
