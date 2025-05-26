@@ -16,7 +16,9 @@ The entire search for a counterexample—a specific finite lattice that would pr
 
 !!! success "The L7 Lattice"
 
-    The smallest finite lattice for which representability by a finite algebra is unknown is a 7-element lattice, denoted **L7** (discovered by **William DeMeo**).
+    The smallest finite lattice for which representability by a finite algebra is unknown is a 7-element lattice, denoted **L7** (discovered by William DeMeo).
+    
+    ![L7 lattice](../assets/l7.png){width=300 height=200}
 
     * It is **the only 7-element lattice whose status is unresolved**.
     * All lattices with 6 or fewer elements are known to be representable.
