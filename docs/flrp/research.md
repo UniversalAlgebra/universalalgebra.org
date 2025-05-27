@@ -9,6 +9,7 @@ The Finite Lattice Representation Problem remains a vital open question. Its res
 * **Identifying "Forbidden Substructures":** Searching for lattice configurations inherently non-representable by finite algebras.
 * **Investigating Problem Variations:** Examining restricted versions of FLRP (e.g., for specific algebra types or varieties).
 
+<!--
 <div class="md-source-date">
   <hr>
   <button id="gemini-future-button" class="md-button md-button--primary">✨ Suggest Novel Research Angles</button>
@@ -16,6 +17,7 @@ The Finite Lattice Representation Problem remains a vital open question. Its res
   <div id="gemini-future-output" class="gemini-output" style="display: none;"></div>
   <hr>
 </div>
+-->
 
 ### Our Approach: Finding a Counterexample
 
