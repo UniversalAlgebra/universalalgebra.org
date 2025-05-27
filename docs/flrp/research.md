@@ -27,12 +27,6 @@ The prevailing conjecture is that the FLRP is false, meaning a counterexample mu
 As detailed on the TCT page, this theory provides a powerful "no-go" framework. The strategy is to analyze the structural requirements TCT imposes on a congruence lattice. If a candidate lattice, such as L7, implies a local configuration of the five TCT types that is proven to be impossible within a single finite algebra, then L7 would be confirmed as a non-representable counterexample.
 
 #### 2. The Interval Enforceable Properties Approach
-*(This section is a placeholder for your summary.)*
-
-!!! todo "Summary Needed"
-
-    Please provide a summary of the key ideas from your paper on "Interval Enforceable Properties" and their connection to the Pálfy-Pudlák theorem. I will integrate it here. For example:
-
-    *"Our research, detailed in the paper 'Interval Enforceable Properties,' introduces a new group-theoretic perspective building on the Pálfy-Pudlák theorem... The core idea is to identify properties of lattices that, if they were to appear as an interval $[H, G]$ in a subgroup lattice, would enforce strong, verifiable conditions on the structure of the finite group $G$..."*
+Our paper on ["Interval Enforceable Properties"](https://arxiv.org/abs/1205.1927) proposes another "no-go" strategy from the group-theoretic perspective, building on the Pálfy-Pudlák theorem.  The core idea is to identify properties of lattices that, if they were to appear as an interval $[H, G]$ in a subgroup lattice, would enforce strong, verifiable conditions on the structure of the finite group $G$.
 
 
