@@ -102,7 +102,7 @@ enforce a cf-IE property $P_i$). If statement (B) holds, then $P$ must be
 representable as a core-free interval $[H, G]$ for some group $G$.  The structure of
 the parachute lattice then ensures that the sub-intervals within $[H, G]$
 corresponding to $L_i$ are also core-free intervals
-isomorphic to $L_i$. Consequently, G must possess each property $P_i$, placing $G$ in the
+isomorphic to $L_i$. Consequently, $G$ must possess each property $P_i$, placing $G$ in the
 intersection $⋂ P_i$. The parachute lattice, therefore, serves as a conceptual blueprint
 for how multiple cf-IE constraints could be simultaneously imposed on a single group
 $G$, should the FLRP have a positive answer. The failure to find such a group $G$, under
@@ -154,7 +154,7 @@ can impose a formidable list of cf-IE properties on any group $G$ that might rep
 it as a core-free interval. These derived properties significantly narrow the class
 of potential candidate groups $G$. The internal structure of the lattice $L_7$
 itself---its specific configuration of meets, joins, and elements like the
-non-modular element K [[1](#works-cited)]---is what drives the deduction of these
+non-modular element K---is what drives the deduction of these
 group properties, often in conjunction with group-theoretic tools like Dedekind's
 rule and Lemma 3.5 (concerning permuting subgroups).[[1](#works-cited)] This
 highlights that a deep understanding of how lattice-theoretic features translate into
@@ -226,7 +226,7 @@ group-theoretic properties of $G$ that can be classified as cf-IE.
 the five types of minimal algebras central to TCT, their characterizing algebraic
 structures, and the nature of their polynomial clones when induced on a trace $N$ for a prime quotient typ(α, β).
 
-| Type | Name        | Characterizing Algebraic Structure | Nature of Polynomial Clone on Trace $N$ ($A∣_N/α∣_N$)                                                |
+| Type | Name        | Characterizing Algebraic Structure | Nature of Poly Clone on Trace $N$ ($A∣_N/α∣_N$)                                                |
 |-----:|:------------|:-----------------------------------|:-----------------------------------------------------------------------------------------------|
 | 1    | Unary       | Permutation group on a set         | All operations are essentially unary (permutations or constants), or can be simulated by such. |
 | 2    | Affine      | Vector space over a finite field   | All operations are affine transformations (linear combinations \+ translations).               |
@@ -237,7 +237,7 @@ structures, and the nature of their polynomial clones when induced on a trace $N
 Table 1 provides a concise reference for the fundamental TCT classification,
 highlighting the core algebraic structure and polynomial characteristics associated
 with each local type. This is crucial for understanding how TCT might define
-enforceable properties for $A_G$, which could then translate to properties of G. This
+enforceable properties for $A_G$, which could then translate to properties of $G$. This
 information is synthesized from multiple sources.[[2](#works-cited)]
 
 ### 2.2. Connecting Local Structure to Global Properties: TCT Types, Malt'sev Conditions, Congruence Identities, Solvability, and Abelianness
@@ -297,33 +297,33 @@ provides extensive information about the structure induced on the body $B$. In
 contrast, the **tail** $T = U - B$ is often described as "wild," meaning TCT offers
 very little structural insight into it.[[3](#works-cited)]
 
-The condition that minimal sets have **empty tails** (T = ∅, so U = B) is highly
+The condition that minimal sets have **empty tails** ($T = ∅$, so $U = B$) is highly
 significant. When tails are empty, the local structure is fully "tame," and the
-analytical power of TCT can be most effectively applied.3 The presence of non-empty
+analytical power of TCT can be most effectively applied. The presence of non-empty
 tails, especially for types 1 or 5, is intrinsically linked to failures of congruence
 modularity. For instance, if a minimal set of type i ∈ {2, 3, 4, 5} has a non-empty
 tail, it forces the existence of a pentagonal sublattice N5 (a hallmark of
-non-modularity) of type i in the congruence lattice of some subalgebra of A2.3
+non-modularity) of type i in the congruence lattice of some subalgebra of $A^2$.
 Conversely, strong conditions on the labeled congruence lattice, such as the absence
 of such pentagons, can force tails to be empty.[[3](#works-cited)]
 
-For a locally finite variety V to be **congruence modular**, two conditions must be
+For a locally finite variety $V$ to be **congruence modular**, two conditions must be
 met: its type set must be restricted to {2,3,4} (i.e., types 1 and 5 must be
-omitted), AND all minimal sets associated with these types must have empty tails.3
+omitted), AND all minimal sets associated with these types must have empty tails.[[3](#works-cited)]
 The "empty tails" condition is thus a critical component of "tameness" in the context
-of well-behaved varieties like congruence modular ones. If a lattice L, interpreted
+of well-behaved varieties like congruence modular ones. If a lattice $L$, interpreted
 as $\mathrm{Con}(A_G)$, were to force $A_G$ to have minimal sets with non-empty tails of type 1 or
 5, this would indicate a certain "wildness" in $A_G$ and imply that $V(A_G)$ is not
 congruence modular. Such "wildness," if translatable into a group-theoretic property,
 could be a candidate for a cf-IE property. The challenge remains in formalizing
 "wildness" (e.g., non-empty tails of specific types) as an algebraic property of $A_G$
-that subsequently translates into a cf-IE group property of G.
+that subsequently translates into a cf-IE group property of $G$.
 
 ## 3. Defining Enforceable Properties via Tame Congruence Theory
 
 This section explores concrete ways TCT concepts can be harnessed to define new cf-IE
 group properties, focusing on the crucial step of translating properties of $\mathrm{Con}(A_G)$
-or the algebra $A_G$ itself into properties of the group G.
+or the algebra $A_G$ itself into properties of the group $G$.
 
 ### 3.1. Leveraging TCT Types: Proposing cf-IE properties based on the presence or omission of specific TCT types or type configurations in $\mathrm{Con}(A_G)$.
 
@@ -334,29 +334,30 @@ of types present in $\mathrm{Con}(A_G)$ (which is isomorphic to the interval L �
    algebra A for which $\mathrm{Con}(A) ≅ L$ to omit certain TCT types from its type set (or
    from the type set of the variety V(A) it generates), this leads to strong
    algebraic consequences. For instance:
-   1.  If L forces $V(A_G)$ to omit **type 1** (unary type), then $A_G$ must possess a Taylor term, and $V(A_G)$ is a Taylor variety.6
-   2.  If L forces $V(A_G)$ to omit **types {1,5}** (unary and semilattice types), then
+   1.  If $L$ forces $V(A_G)$ to omit **type 1** (unary type), then $A_G$ must
+       possess a Taylor term, and $V(A_G)$ is a Taylor variety.[[6](#works-cited)]
+   2.  If $L$ forces $V(A_G)$ to omit **types {1,5}** (unary and semilattice types), then
        $A_G$ must satisfy a non-trivial congruence identity and possess a Hobby-McKenzie
-       term.6 The critical step is then to determine if "G is a group such that $A_G$
-       has a Taylor term (or satisfies a given congruence identity)" can be
-       established as a cf-IE property of G, meaning it is enforceable by some
-       (potentially different) lattice L′. This translation from an algebraic
-       property of $A_G$ to a cf-IE group property of G represents a significant
-       theoretical challenge. 
-+  **Properties Based on Type Presence**. Conversely, if the structure of L forces
+       term.[[6](#works-cited)] The critical step is then to determine if "G is a
+       group such that $A_G$ has a Taylor term (or satisfies a given congruence
+       identity)" can be established as a cf-IE property of $G$, meaning it is
+       enforceable by some (potentially different) lattice $L′$. This translation
+       from an algebraic property of $A_G$ to a cf-IE group property of $G$
+       represents a significant theoretical challenge. 
++  **Properties Based on Type Presence**. Conversely, if the structure of $L$ forces
    $\mathrm{Con}(A_G)$ to exhibit certain TCT types, this can also lead to enforceable
-   properties. For example, if L is a non-modular lattice, then $\mathrm{Con}(A_G)$ must be
+   properties. For example, if $L$ is a non-modular lattice, then $\mathrm{Con}(A_G)$ must be
    non-modular. In locally finite varieties, non-modular congruence lattices
-   necessitate the presence of TCT types 1 or 5 [2 (Corollary 5.20)]. Thus, if a
-   non-modular lattice LNM​ enforces the property "$A_G$ admits type 1 or type 5," then
-   "G is a group such that $A_G$ admits type 1 or 5 when LNM ≅ [H, G]" could be a
+   necessitate the presence of TCT types 1 or 5 [[2](#works-cited) (Corollary 5.20)].
+   Thus, if a non-modular lattice $Lₙₘ$ enforces the property "$A_G$ admits type 1 or type 5," then
+   "$G$ is a group such that $A_G$ admits type 1 or 5 when $Lₙₘ ≅ [H, G]$" could be a
    candidate cf-IE property.
 
 The "empty tails" condition is an important qualifier. Properties like "$V(A_G)$ omits
 type 1 AND has empty tails for all its minimal sets" would be stronger and more
 directly related to conditions like congruence modularity.3 The translation
 bottleneck remains: how does an algebraic property of $A_G$ (like "$V(A_G)$ is congruence
-modular") translate to a cf-IE group property of G?
+modular") translate to a cf-IE group property of $G$?
 
 ### 3.2. Exploiting Geometric Constraints in Labeled Congruence Lattices
 
@@ -393,9 +394,9 @@ These geometric constraints offer a direct mechanism for L to enforce TCT types 
 $A_G$. For example, if Ltarget​ contains an N5 configuration, then any group G
 representing Ltarget​ as $\mathrm{Con}(A_G)$ must be such that $A_G$ admits type 1 or 5\. This
 admission of "wilder" types becomes an algebraic property of $A_G$, which then needs to
-be translated into a cf-IE group property of G. The analysis of $L_7$ in DeMeo's paper
+be translated into a cf-IE group property of $G$. The analysis of $L_7$ in DeMeo's paper
 implicitly uses such geometric reasoning; for instance, its non-modularity
-contributes to the derived properties of G.
+contributes to the derived properties of $G$.
 
 ### 3.3. The Role of Solvable/Abelian Congruence Quotients and their TCT Type Correlates
 
@@ -416,7 +417,7 @@ this imposes strict constraints on the TCT types present.  For instance, if L fo
 a prime quotient in $\mathrm{Con}(A_G)$ to be non-abelian, then that quotient cannot be of type 2
 and, if type 1, must be a non-abelian type 1\. DeMeo's result that insolubility of G
 is IE [[1](#works-cited)] is an example of how such properties might connect; if $A_G$ having only
-solvable congruence quotients implied G is solvable, then a lattice L forcing a
+solvable congruence quotients implied $G$ is solvable, then a lattice L forcing a
 non-solvable quotient in $\mathrm{Con}(A_G)$ might enforce G's insolubility. This link between
 the TCT commutator and group-theoretic solvability/nilpotency is a promising area for
 defining cf-IE properties.
@@ -437,7 +438,7 @@ The synergy unfolds as follows:
 
 1.  DeMeo's framework provides the overarching group-theoretic strategy and the
     parachute lattice construction as a conceptual tool for demonstrating how
-    multiple cf-IE properties might be simultaneously forced upon a group G if FLRP
+    multiple cf-IE properties might be simultaneously forced upon a group $G$ if FLRP
     has a positive answer.
 
 2.  TCT provides a rich vocabulary of algebraic properties (Palg​) associated with the
@@ -453,8 +454,8 @@ If a set of such TCT-derived cf-IE group properties, possibly combined with know
 cf-IE properties (like those from DeMeo's $L_7$ analysis [[1](#works-cited)]), can be shown to be mutually
 incompatible (i.e., their intersection is empty), then Theorem 3.6 (C) would lead to
 a contradiction, implying FLRP has a negative answer. For example, one might find a
-TCT-derived property P1​ (enforced by lattice L1′​) implying G has a highly non-abelian
-structure, and another P2​ (enforced by L2′​) implying G has strong commutativity
+TCT-derived property P1​ (enforced by lattice L1′​) implying $G$ has a highly non-abelian
+structure, and another P2​ (enforced by L2′​) implying $G$ has strong commutativity
 properties. If P1​ and P2​ are incompatible, then the parachute lattice P(Lany​,L1′​,L2′​)
 would be unrepresentable by any group as a core-free interval, falsifying statement
 (B) of Pálfy-Pudlák.
@@ -462,7 +463,7 @@ would be unrepresentable by any group as a core-free interval, falsifying statem
 A subtle but critical distinction must be maintained: a "forcing lattice" versus an
 "enforcing lattice." A specific lattice Ltarget (e.g., $L_7$ or a parachute lattice)
 might, by its structure, *force* $A_G$ (where Ltarget ≅ $\mathrm{Con}(A_G)$) to exhibit certain TCT
-characteristics, which in turn imply a group property $P_{grp}$​ for G.  However, for $P_{grp}$​
+characteristics, which in turn imply a group property $P_{grp}$​ for $G$.  However, for $P_{grp}$​
 to be a cf-IE property in DeMeo's sense, there must exist some lattice $L\_{\mathrm{enforce}}$
 (which could be different from Ltarget​) such that *any* group X representing $L\_{\mathrm{enforce}}$
 as a core-free interval [K, X] must possess property $P_{grp}$​. This two-layered lattice
@@ -482,19 +483,19 @@ progress is made.
 
 **Table 2. Known and Candidate TCT-Derived cf-IE Properties**.
 This table outlines existing cf-IE properties and proposes candidate properties
-derivable from TCT, highlighting the crucial link to group G and the nature of the
+derivable from TCT, highlighting the crucial link to group $G$ and the nature of the
 enforcing lattice.
 
-| Property Type | Property Description (for Group G or Algebra $A_G$≅G/H) | Known/ Candidate | Enforcing Lattice/Condition (Hypothesized for Candidates) | Notes / Connection of $A_G$ property to G |
+| Property Type | Property Description (for Group $G$ or Algebra $A_G$≅G/H) | Known/ Candidate | Enforcing Lattice/Condition (Hypothesized for Candidates) | Notes / Connection of $A_G$ property to $G$ |
 | :---- | :---- | :---- | :---- | :---- |
-| DeMeo (Known) | G is insoluble | Known | Pálfy's lattice LS​ (not representable by soluble groups) 1 | Direct group property. |
-| DeMeo (Known) | G is not An​ or Sn​ (for any n) | Known | Lattices from Basile, Aschbacher & Shareshian 1 | Direct group property. |
-| DeMeo (Known, via $L_7$) | G is subdirectly irreducible | Known if $L_7 ≅ [H, G]$ | $L_7$ 1 | Property of $G$ if $L_7$ is the interval. |
+| DeMeo (Known) | $G$ is insoluble | Known | Pálfy's lattice LS​ (not representable by soluble groups) 1 | Direct group property. |
+| DeMeo (Known) | $G$ is not An​ or Sn​ (for any n) | Known | Lattices from Basile, Aschbacher & Shareshian 1 | Direct group property. |
+| DeMeo (Known, via $L_7$) | $G$ is subdirectly irreducible | Known if $L_7 ≅ [H, G]$ | $L_7$ 1 | Property of $G$ if $L_7$ is the interval. |
 | DeMeo (Known, via $L_7$) | For any $1 = N ◃ G$, $C_G(N) = 1$ | Known if $L_7 ≅ [H, G]$ | $L_7$ 1 | Property of $G$ if $L_7$ is the interval. |
-| TCT-derived (Cand.) | $V(A_G)$ omits TCT type 1 (is a Taylor variety) | Candidate | A lattice $L_{no−1}$ whose structure forces any $\mathrm{Con}(A) ≅ L_{no−1}$ to omit type 1\. | *Challenge*: Translate "V(G/H) has Taylor term" to a structural property of G. May relate to G having no "unary-like" actions or specific chief factor properties. |
-| TCT-derived (Cand.) | $V(A_G)$ omits TCT types {1,5} (satisfies a non-trivial congruence identity) | Candidate | A lattice Lno−1,5​ whose structure forces omission of types {1,5}. | *Challenge*: Translate "V(G/H) satisfies cong. identity X" to a property of G. |
-| TCT-derived (Cand.) | $\mathrm{Con}(A_G)$ contains an N5 sublattice (hence types 1 or 5 must be present in $V(A_G)$) | Candidate | Any non-modular lattice LNM​. | If LNM​≅[H, G], then V(G/H) has types 1 or 5\. Could force G to be non-CM (if tails are non-empty) or relate to specific simple sections of G. |
-| TCT-derived (Cand.) | $\mathrm{Con}(A_G)$ is modular (hence $V(A_G)$ omits types 1,5 and has empty tails for types {2,3,4}) | Candidate | A modular, non-distributive lattice LM​. | If LM​≅[H, G], V(G/H) is congruence modular. Strong constraint. May imply G is solvable or has specific chief factor structures (e.g., only affine or simple non-abelian of specific TCT types). |
+| TCT-derived (Cand.) | $V(A_G)$ omits TCT type 1 (is a Taylor variety) | Candidate | A lattice $L_{no−1}$ whose structure forces any $\mathrm{Con}(A) ≅ L_{no−1}$ to omit type 1\. | *Challenge*: Translate "V(G/H) has Taylor term" to a structural property of $G$. May relate to $G$ having no "unary-like" actions or specific chief factor properties. |
+| TCT-derived (Cand.) | $V(A_G)$ omits TCT types {1,5} (satisfies a non-trivial congruence identity) | Candidate | A lattice Lno−1,5​ whose structure forces omission of types {1,5}. | *Challenge*: Translate "V(G/H) satisfies cong. identity X" to a property of $G$. |
+| TCT-derived (Cand.) | $\mathrm{Con}(A_G)$ contains an N5 sublattice (hence types 1 or 5 must be present in $V(A_G)$) | Candidate | Any non-modular lattice LNM​. | If LNM​≅[H, G], then V(G/H) has types 1 or 5\. Could force $G$ to be non-CM (if tails are non-empty) or relate to specific simple sections of $G$. |
+| TCT-derived (Cand.) | $\mathrm{Con}(A_G)$ is modular (hence $V(A_G)$ omits types 1,5 and has empty tails for types {2,3,4}) | Candidate | A modular, non-distributive lattice LM​. | If LM​≅[H, G], V(G/H) is congruence modular. Strong constraint. May imply $G$ is solvable or has specific chief factor structures (e.g., only affine or simple non-abelian of specific TCT types). |
 | TCT-derived (Cand.) | An interval I\[α,β\] in $\mathrm{Con}(A_G)$ is solvable (all prime factors type 1 or 2\) | Candidate | A lattice L whose structure forces a specific interval to be solvable in any Con(A)≅L. | Forces local structure of Con(G/H) to be types 1 or 2\. $A_G$ has locally abelian/affine structure. Impact on G's derived series or commutator structure? |
 
 ### 4.2. Methodological Strengths
@@ -548,9 +549,9 @@ Despite the promise, several substantial hurdles must be overcome.
      for potentially complex lattices arising from TCT considerations may not be
      straightforward.
 
-The path from the TCT properties of Con(G/H) to cf-IE properties of G is the most
+The path from the TCT properties of Con(G/H) to cf-IE properties of $G$ is the most
 critical and least explored part of this proposed strategy. It requires a deep
-understanding of how the action of G on G/H reflects back onto the structure of G
+understanding of how the action of $G$ on $G/H$ reflects back onto the structure of $G$
 itself, in a way that is conditionable by lattice interval structures.
 
 ## 5. Concluding Analysis and Strategic Recommendations
@@ -581,11 +582,11 @@ To realize the potential of this combined strategy, future research should focus
 
 1.  **The Translation Problem**. This is the most critical research direction.
     Methodologies need to be developed to rigorously translate TCT-derived properties
-    of the algebra $A_G$ = ⟨G/H, ϕ(G)⟩ (such as omitting specific TCT types, satisfying
+    of the algebra $A_G = ⟨G/H, ϕ(G)⟩$ (such as omitting specific TCT types, satisfying
     certain Malt'sev conditions, or having specific local congruence geometries) into
-    well-defined group-theoretic properties of G. This involves understanding how the
-    structure of the G-set G/H and its TCT characteristics reflect back onto the
-    intrinsic structure of G.
+    well-defined group-theoretic properties of $G$. This involves understanding how the
+    structure of the $G$-set $G/H$ and its TCT characteristics reflect back onto the
+    intrinsic structure of $G$.
 
     +  **Question**. If $V(A_G)$ is a Taylor variety (omits type 1), what does this imply
        about the normal subgroup structure, solvability, or permutational properties
@@ -593,7 +594,7 @@ To realize the potential of this combined strategy, future research should focus
 
     +  **Question**. If $\mathrm{Con}(A_G)$ is congruence modular 
        (implying $\mathrm{typ}(V(A_G)) ⊆ {2,3,4}$ and empty tails), 
-       what restrictions does this place on $G$ (e.g., related to G being
+       what restrictions does this place on $G$ (e.g., related to $G$ being
        solvable, or having specific types of chief factors)?
 
 2.  **Identifying and Proving cf-IE Nature of TCT-Derived Group Properties**. 
@@ -613,15 +614,15 @@ To realize the potential of this combined strategy, future research should focus
 
     +  **Question**. If a lattice L contains projective prime quotients I1​ and I2​,
     TCT implies typ(I1​) = typ(I2​) (under suitable conditions).  Can this type
-    equality, for specific types forced by L's structure, be translated into a cf-IE
-    property of G?
+    equality, for specific types forced by $L$'s structure, be translated into a cf-IE
+    property of $G$?
 
 4.  **Re-analysis of Critical Lattices (e.g., $L_7$)**. Apply a full TCT analysis to
     lattices like $L_7$.  DeMeo's analysis of $L_7$ derived several cf-IE
     properties.[[1](#works-cited)]  TCT might reveal further constraints on
     $\mathrm{Con}(A_G) ≅ L_7$ (e.g., specific type occurrences due to its
     non-modularity or M3 sublattices) which could translate into additional cf-IE
-    properties of G, potentially strengthening the argument for $L_7$'s
+    properties of $G$, potentially strengthening the argument for $L_7$'s
     non-representability or leading to a contradiction.
 
 5.  **Investigating the "Empty Tails" Condition**. The property that "$A_G$ has only
@@ -634,10 +635,10 @@ To realize the potential of this combined strategy, future research should focus
     well-established.[[2](#works-cited)]  If a lattice L forces certain
     commutator-theoretic properties on $\mathrm{Con}(A_G)$, this implies restrictions
     on types 1 and 2\. This could lead to cf-IE properties related to the derived
-    series or nilpotency class of G.
+    series or nilpotency class of $G$.
 
 Progress in these directions, particularly in systematically bridging the gap between
-TCT properties of $A_G$ and cf-IE properties of G, holds the most promise for
+TCT properties of $A_G$ and cf-IE properties of $G$, holds the most promise for
 leveraging this combined strategy to make significant advancements on the Finite
 Lattice Representation Problem. A "negative" TCT result, such as identifying a TCT
 type-labeling pattern that is impossible for any finite congruence lattice, could
