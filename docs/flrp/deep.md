@@ -494,7 +494,7 @@ TCT-derived cf-IE properties are somewhat self-referential in this regard: the
 lattice whose structure inherently forces specific TCT features on any algebra whose
 congruence lattice it is.
 
-DeMeo's analysis of $L_7$ [[1](#works-cited)] already provides a set of potent cf-IE properties ($G$ is
+DeMeo's analysis of $L_7$ in [[1](#works-cited)] already provides a set of potent cf-IE properties ($G$ is
 primitive, insoluble, $C_G(N) = 1$, etc.). If TCT analysis of $L_7$ (or other lattices) can
 yield *new, independent* cf-IE properties of $G$, the intersection of required
 properties shrinks, making a contradiction more attainable.  For instance, $L_7$ is
@@ -543,7 +543,7 @@ relevant to the FLRP.
 Despite the promise, several substantial hurdles must be overcome.
 
 1.  **The Translation Problem**. The foremost challenge is translating algebraic
-    properties of $A_G$ (the G-set ⟨G/H, ϕ(G)⟩), derived from TCT analysis of $L ≅ \mathrm{Con}(A_G)$, 
+    properties of $A_G$ (the $G$-set $⟨G/H, ϕ(G)⟩$), derived from TCT analysis of $L ≅ \mathrm{Con}(A_G)$, 
     into meaningful and provably cf-IE *group-theoretic properties* of $G$.
     For example, if TCT implies $A_G$ must have a Taylor term (because $\mathrm{Con}(A_G)$ omits
     type 1), it is not immediately clear what specific structural property this
