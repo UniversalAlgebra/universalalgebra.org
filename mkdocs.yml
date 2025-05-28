@@ -53,7 +53,9 @@ nav:
     - Current Status & Counterexamples: flrp/status.md
     - Tame Congruence Theory: flrp/tct.md
     - Partial Results & Related Problems: flrp/related.md
-    - Current & Future Research: flrp/research.md
+    - Current & Future Research:
+      - shallow: flrp/research.md
+      - deep: flrp/deep.md
 
 # Custom JavaScript for Gemini Button
 extra_javascript:
