@@ -470,12 +470,13 @@ The synergy unfolds as follows:
     these $P_{\mathrm{grp}}$​ are indeed cf-IE, i.e., enforceable by some lattice.
 
 If a set of such TCT-derived cf-IE group properties, possibly combined with known
-cf-IE properties (like those from DeMeo's $L_7$ analysis [[1](#works-cited)]), can be shown to be mutually
-incompatible (i.e., their intersection is empty), then Theorem 3.6 (C) would lead to
-a contradiction, implying FLRP has a negative answer. For example, one might find a
-TCT-derived property P1​ (enforced by lattice L1′​) implying $G$ has a highly non-abelian
-structure, and another P2​ (enforced by L2′​) implying $G$ has strong commutativity
-properties. If P1​ and P2​ are incompatible, then the parachute lattice P(Lany​,L1′​,L2′​)
+cf-IE properties (like those from DeMeo's $L_7$ analysis [[1](#works-cited)]), can be
+shown to be mutually incompatible (i.e., their intersection is empty), then Theorem
+3.6 (C) would lead to a contradiction, implying FLRP has a negative answer. For
+example, one might find a TCT-derived property $P_1$​ (enforced by lattice $L_1′$)
+implying $G$ has a highly non-abelian structure, and another $P_2$ (enforced by
+$L_2′$) implying $G$ has strong commutativity properties. If $P_1$ and $P_2$ are
+incompatible, then the parachute lattice $P(L_{\mathrm{any}}, L_1′​, L_2′​)$
 would be unrepresentable by any group as a core-free interval, falsifying statement
 (B) of Pálfy-Pudlák.
 
@@ -483,9 +484,9 @@ A subtle but critical distinction must be maintained: a "forcing lattice" versus
 "enforcing lattice." A specific lattice Ltarget (e.g., $L_7$ or a parachute lattice)
 might, by its structure, *force* $A_G$ (where Ltarget ≅ $\mathrm{Con}(A_G)$) to exhibit certain TCT
 characteristics, which in turn imply a group property $P_{\mathrm{grp}}$​ for $G$.  However, for $P_{\mathrm{grp}}$​
-to be a cf-IE property in DeMeo's sense, there must exist some lattice $L\_{\mathrm{enforce}}$
-(which could be different from Ltarget​) such that *any* group X representing $L\_{\mathrm{enforce}}$
-as a core-free interval [K, X] must possess property $P_{\mathrm{grp}}$​. This two-layered lattice
+to be a cf-IE property in DeMeo's sense, there must exist some lattice $L_{\mathrm{enf}}$
+(which could be different from Ltarget​) such that *any* group X representing $L\_{\mathrm{enf}}$
+as a core-free interval $[K, X]$ must possess property $P_{\mathrm{grp}}$​. This two-layered lattice
 argumentation is essential for the logical integrity of applying Theorem 3.6. The
 TCT-derived cf-IE properties are somewhat self-referential in this regard: the
 "enforcing lattice" $L_{P_i}$ for a TCT-derived property $P_i$ would itself need to be a
@@ -494,7 +495,7 @@ congruence lattice it is.
 
 DeMeo's analysis of $L_7$ [[1](#works-cited)] already provides a set of potent cf-IE properties (G is
 primitive, insoluble, $C_G(N) = 1$, etc.). If TCT analysis of $L_7$ (or other lattices) can
-yield *new, independent* cf-IE properties of G, the intersection of required
+yield *new, independent* cf-IE properties of $G$, the intersection of required
 properties shrinks, making a contradiction more attainable.  For instance, $L_7$ is
 non-modular, implying $\mathrm{Con}(A_G)$ must admit types 1 or 5; if this admission can be
 translated into a new cf-IE group property not already covered by DeMeo's analysis,
@@ -634,9 +635,9 @@ To realize the potential of this combined strategy, future research should focus
     lattices are foundational here.[[2](#works-cited)]
 
     +  **Question**. If a lattice $L$ contains projective prime quotients $I_1$ and $I_2$,
-    TCT implies $\mathrm{typ}(I_1) = \mathrm{typ}(I_2)$ (under suitable conditions).  
-    Can this type equality, for specific types forced by $L$'s structure, be
-    translated into a cf-IE property of $G$?
+       TCT implies $\mathrm{typ}(I_1) = \mathrm{typ}(I_2)$ (under suitable conditions).
+       Can this type equality, for specific types forced by $L$'s structure, be
+       translated into a cf-IE property of $G$?
 
 4.  **Re-analysis of Critical Lattices (e.g., $L_7$)**. Apply a full TCT analysis to
     lattices like $L_7$.  DeMeo's analysis of $L_7$ derived several cf-IE
