@@ -20,12 +20,12 @@ Theorem. This theorem states two equivalent conditions:
 +  (A) Every finite lattice is isomorphic to the congruence lattice of some finite
    algebra $A$ (denoted $\mathrm{Con}(A)$).
 +  (B) Every finite lattice is isomorphic to an interval in the subgroup lattice of
-   some finite group $G$ (denoted $[H, G]$, representing the lattice of subgroups of G
+   some finite group $G$ (denoted $[H, G]$, representing the lattice of subgroups of $G$
    containing $H$ and contained in $G$).
 
-The equivalence (A) ⟺ (B) implies that if one can find a finite lattice L for which
-it can be proven that no finite group G exists such that L ≅ [H, G] for some subgroup
-H of G, then it would follow that statement (A) is false, and the FLRP would have a
+The equivalence (A) ⟺ (B) implies that if one can find a finite lattice $L$ for which
+it can be proven that no finite group $G$ exists such that $L ≅ [H, G]$ for some subgroup
+$H$ of $G$, then it would follow that statement (A) is false, and the FLRP would have a
 negative answer. This theorem, therefore, transforms a problem in universal algebra
 and lattice theory into a problem concerning the structure of subgroup lattices of
 finite groups, providing the primary motivation for the approach detailed in
@@ -35,7 +35,7 @@ constructions and arguments.
 
 ### 1.2. Core-Free Interval Enforceable (cf-IE) Properties: Definitions and Significance
   
-Building upon the Pálfy-Pudlák theorem, DeMeo [[1](#works-cited)] introduces a
+In  [[1](#works-cited)], building upon the Pálfy-Pudlák theorem, DeMeo introduces a
 classification of group-theoretic properties based on their relationship to lattice
 intervals. An "interval enforceable (IE)" property $P$ is a group property for which
 there exists a finite lattice $L$ such that if $G$ is a group with $L$ isomorphic to an
@@ -94,8 +94,8 @@ of the FLRP.[[1](#works-cited)] This transforms the FLRP into a concrete
 group-theoretic problem: the search for a set of mutually incompatible cf-IE
 properties.
 
-The "parachute lattice" construction, denoted $P(L, L_1, ..., L_n)$ and illustrated in
-Figure 4 of [[1](#works-cited)], is a key technical device used in proving the
+The "parachute lattice" construction, denoted $P(L, L_1, ..., L_n)$ (Figure 4 of
+[[1](#works-cited)] and reproduced below), is a key technical device used in proving the
 equivalence (B) ⟹ (C). This construction involves creating a new lattice P from a given
 lattice $L$ and a set of lattices $L_1$, ..., $L_n$ (where each $L_i$ is known to
 enforce a cf-IE property $P_i$). If statement (B) holds, then $P$ must be
@@ -109,6 +109,8 @@ $G$, should the FLRP have a positive answer. The failure to find such a group $G
 increasingly restrictive (yet valid) cf-IE conditions, would provide evidence against
 the FLRP.
 
+![Parachute construction](../assets/parachuteHG.png){width=300 height=200}
+
 Furthermore, Corollary 3.9 of [[1](#works-cited)], which follows from the parachute
 construction logic, states that the conjunction of any finite number of cf-IE
 properties is itself a cf-IE property. This reinforces the strategy of accumulating
@@ -118,9 +120,13 @@ intersection).
 ### 1.4. Illustrative Example: Insights from the Analysis of $L_7$
 
 DeMeo's paper provides a compelling illustration of this strategy through a detailed
-analysis of a specific seven-element lattice, denoted $L_7$. This lattice is notable as
+analysis of a specific seven-element lattice, denoted $L_7$. (Figure 4 of
+[[1](#works-cited)] and reproduced below.)
+This lattice is notable as
 it is the smallest for which a congruence lattice representation 
 ($L_7 ≅ \mathrm{Con}(A)$ for some finite algebra A) has not yet been found.[[1](#works-cited)]
+
+![L7 lattice](../assets/l7.png){width=300 height=200}
 
 Proposition 4.1 of [[1](#works-cited)] outlines a set of strong group-theoretic
 properties that any finite group $G$ must possess if $L_7$ is isomorphic to a core-free
