@@ -24,7 +24,7 @@
     
     
       
-        <title>deep - Universal Algebra .org</title>
+        <title>details - Universal Algebra .org</title>
       
     
     
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              deep
+              details
             
           </span>
         </div>
@@ -550,7 +550,7 @@
         
   
   <span class="md-ellipsis">
-    shallow
+    summary
     
   </span>
   
@@ -581,7 +581,7 @@
           
   
   <span class="md-ellipsis">
-    deep
+    details
     
   </span>
   
@@ -593,7 +593,7 @@
         
   
   <span class="md-ellipsis">
-    deep
+    details
     
   </span>
   
@@ -616,13 +616,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-the-finite-lattice-representation-problem-context-and-demeos-framework" class="md-nav__link">
+  <a href="#1-the-finite-lattice-representation-problem-context-and-framework" class="md-nav__link">
     <span class="md-ellipsis">
-      1. The Finite Lattice Representation Problem: Context and DeMeo's Framework
+      1. The Finite Lattice Representation Problem: Context and Framework
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. The Finite Lattice Representation Problem: Context and DeMeo&#39;s Framework">
+    <nav class="md-nav" aria-label="1. The Finite Lattice Representation Problem: Context and Framework">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -885,13 +885,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-the-finite-lattice-representation-problem-context-and-demeos-framework" class="md-nav__link">
+  <a href="#1-the-finite-lattice-representation-problem-context-and-framework" class="md-nav__link">
     <span class="md-ellipsis">
-      1. The Finite Lattice Representation Problem: Context and DeMeo's Framework
+      1. The Finite Lattice Representation Problem: Context and Framework
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. The Finite Lattice Representation Problem: Context and DeMeo&#39;s Framework">
+    <nav class="md-nav" aria-label="1. The Finite Lattice Representation Problem: Context and Framework">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1123,18 +1123,22 @@
 
 
 <h1 id="revisiting-enforceable-properties-for-the-finite-lattice-representation-problem-a-tame-congruence-theory-perspective">Revisiting Enforceable Properties for the Finite Lattice Representation Problem: A Tame Congruence Theory Perspective</h1>
-<h2 id="1-the-finite-lattice-representation-problem-context-and-demeos-framework">1. The Finite Lattice Representation Problem: Context and DeMeo's Framework</h2>
-<p>This section establishes the foundational context of the Finite Lattice
-Representation Problem (FLRP) and meticulously dissects DeMeo's contributions [<a href="#works-cited">1</a>],
-highlighting the mechanisms relevant to the proposed combined strategy.</p>
+<p>This page was compiled with the help of the Gemini 2.5 Pro AI assistant in "Deep
+Research" mode.</p>
+<h2 id="1-the-finite-lattice-representation-problem-context-and-framework">1. The Finite Lattice Representation Problem: Context and Framework</h2>
+<p>This section establishes the foundational context of the Finite Lattice 
+Representation Problem (FLRP) and meticulously dissects DeMeo's contributions
+[<a href="#works-cited">1</a>], highlighting the mechanisms relevant to the proposed combined
+strategy.</p>
 <h3 id="11-brief-recapitulation-of-the-flrp-and-the-palfy-pudlak-theorem">1.1. Brief Recapitulation of the FLRP and the Pálfy-Pudlák Theorem</h3>
 <p>The Finite Lattice Representation Problem (FLRP) stands as a central open question in
 universal algebra, asking for a characterization of those finite lattices that are
-isomorphic to the congruence lattices of finite algebras.[<a href="#works-cited">1</a>] The study of congruence
-lattices, which encode the homomorphic images and internal symmetries of algebraic
-structures, is fundamental to understanding the structure of algebras themselves.</p>
+isomorphic to the congruence lattices of finite algebras.[<a href="#works-cited">1</a>] 
+The study of congruence lattices, which encode the homomorphic images and internal
+symmetries of algebraic structures, is fundamental to understanding the structure of
+algebras themselves.</p>
 <p>A pivotal result connecting this problem to group theory is the Pálfy-Pudlák
-Theorem. This theorem states two equivalent conditions:</p>
+Theorem.[<a href="#works-cited">17</a>] This theorem states two equivalent conditions:</p>
 <ul>
 <li>(A) Every finite lattice is isomorphic to the congruence lattice of some finite
    algebra <span class="arithmatex">\(A\)</span> (denoted <span class="arithmatex">\(\mathrm{Con}(A)\)</span>).</li>
@@ -1152,16 +1156,18 @@ DeMeo.[<a href="#works-cited">1</a>] The strategic importance of this connection
 overstated, as it opens a pathway to addressing the FLRP through group-theoretic
 constructions and arguments.</p>
 <h3 id="12-core-free-interval-enforceable-cf-ie-properties-definitions-and-significance">1.2. Core-Free Interval Enforceable (cf-IE) Properties: Definitions and Significance</h3>
-<p>In  [<a href="#works-cited">1</a>], building upon the Pálfy-Pudlák theorem, DeMeo introduces a
-classification of group-theoretic properties based on their relationship to lattice
-intervals. An "interval enforceable (IE)" property <span class="arithmatex">\(P\)</span> is a group property for which
-there exists a finite lattice <span class="arithmatex">\(L\)</span> such that if <span class="arithmatex">\(G\)</span> is a group with <span class="arithmatex">\(L\)</span> isomorphic to an
-interval <span class="arithmatex">\([H, G]\)</span> in its subgroup lattice <span class="arithmatex">\(\mathrm{Sub}(G)\)</span>, then <span class="arithmatex">\(G\)</span> must possess property <span class="arithmatex">\(P\)</span>.</p>
-<p>A more refined and crucial concept for the FLRP is that of "core-free interval
-enforceable (cf-IE)" properties.  A property <span class="arithmatex">\(P\)</span> is cf-IE if there exists a finite
-lattice <span class="arithmatex">\(L\)</span> such that if <span class="arithmatex">\(G\)</span> is a group with <span class="arithmatex">\(L ≅ [H, G]\)</span> and <span class="arithmatex">\(H\)</span> is a core-free
-subgroup of <span class="arithmatex">\(G\)</span> (i.e., <span class="arithmatex">\(\mathrm{core}_G(H) = 1\)</span>, meaning <span class="arithmatex">\(H\)</span> contains no non-trivial
-normal subgroup of <span class="arithmatex">\(G\)</span>), then <span class="arithmatex">\(G\)</span> must possess property <span class="arithmatex">\(P\)</span>.[<a href="#works-cited">1</a>]</p>
+<p>In  [<a href="#works-cited">1</a>], building upon the Pálfy-Pudlák theorem [<a href="#works-cited">17</a>],
+DeMeo introduces a classification of group-theoretic properties based on their
+relationship to lattice intervals. An "interval enforceable (IE)" property <span class="arithmatex">\(P\)</span> is a
+group property for which there exists a finite lattice <span class="arithmatex">\(L\)</span> such that if <span class="arithmatex">\(G\)</span> is a
+group with <span class="arithmatex">\(L\)</span> isomorphic to an interval <span class="arithmatex">\([H, G]\)</span> in its subgroup lattice
+<span class="arithmatex">\(\mathrm{Sub}(G)\)</span>, then <span class="arithmatex">\(G\)</span> must possess property <span class="arithmatex">\(P\)</span>.</p>
+<p>A more refined and crucial concept for the FLRP is that of 
+<em>core-free interval enforceable</em> (cf-IE) properties.
+A property <span class="arithmatex">\(P\)</span> is cf-IE if there exists a finite lattice <span class="arithmatex">\(L\)</span> such that if <span class="arithmatex">\(G\)</span> is a
+group with <span class="arithmatex">\(L ≅ [H, G]\)</span> and <span class="arithmatex">\(H\)</span> is a core-free subgroup of <span class="arithmatex">\(G\)</span> (i.e.,
+<span class="arithmatex">\(\mathrm{core}_G(H) = 1\)</span>, meaning <span class="arithmatex">\(H\)</span> contains no non-trivial normal subgroup of
+<span class="arithmatex">\(G\)</span>), then <span class="arithmatex">\(G\)</span> must possess property <span class="arithmatex">\(P\)</span>.[<a href="#works-cited">1</a>]</p>
 <p>The core-free condition, <span class="arithmatex">\(\mathrm{core}_G(H) = 1\)</span>, is of paramount significance. 
 When <span class="arithmatex">\(H\)</span> is core-free in <span class="arithmatex">\(G\)</span>, the group <span class="arithmatex">\(G\)</span> admits a faithful permutation
 representation <span class="arithmatex">\(ϕ\)</span> on the set of right cosets <span class="arithmatex">\(G/H\)</span>. It is a well-established result
@@ -1176,7 +1182,7 @@ condition to statement (A) of the Pálfy-Pudlák theorem, making cf-IE propertie
 particularly potent tools for investigating the FLRP. Without the core-free
 assumption, the interval <span class="arithmatex">\([H, G]\)</span> might not directly correspond to a congruence lattice
 of an algebra naturally derived from <span class="arithmatex">\(G\)</span> in a way that is immediately relevant to the
-FLRP as formulated by Pálfy and Pudlák.</p>
+FLRP as formulated by Pálfy and Pudlák in [<a href="#works-cited">17</a>].</p>
 <p>DeMeo [<a href="#works-cited">1</a>] provides several examples of cf-IE properties. Insolubility
 is shown to be IE (and therefore cf-IE), while solubility is demonstrated to be not
 even cf-IE.  Other identified cf-IE classes of groups include those that
@@ -1201,23 +1207,22 @@ finite collection of cf-IE classes of groups, <span class="arithmatex">\(X_1\)</
 empty (i.e., no finite group can simultaneously possess all these properties), then
 statement (C) would be false for any choice of <span class="arithmatex">\(L\)</span>. This, in turn, would imply that
 statement (B) of the Pálfy-Pudlák theorem is false, leading to a negative resolution
-of the FLRP.[<a href="#works-cited">1</a>] This transforms the FLRP into a concrete
-group-theoretic problem: the search for a set of mutually incompatible cf-IE
-properties.</p>
-<p>The "parachute lattice" construction, denoted <span class="arithmatex">\(P(L, L_1, ..., L_n)\)</span> (Figure 4 of
-[<a href="#works-cited">1</a>] and reproduced below), is a key technical device used in proving the
-equivalence (B) ⟹ (C). This construction involves creating a new lattice P from a given
-lattice <span class="arithmatex">\(L\)</span> and a set of lattices <span class="arithmatex">\(L_1\)</span>, ..., <span class="arithmatex">\(L_n\)</span> (where each <span class="arithmatex">\(L_i\)</span> is known to
-enforce a cf-IE property <span class="arithmatex">\(P_i\)</span>). If statement (B) holds, then <span class="arithmatex">\(P\)</span> must be
-representable as a core-free interval <span class="arithmatex">\([H, G]\)</span> for some group <span class="arithmatex">\(G\)</span>.  The structure of
-the parachute lattice then ensures that the sub-intervals within <span class="arithmatex">\([H, G]\)</span>
-corresponding to <span class="arithmatex">\(L_i\)</span> are also core-free intervals
-isomorphic to <span class="arithmatex">\(L_i\)</span>. Consequently, <span class="arithmatex">\(G\)</span> must possess each property <span class="arithmatex">\(P_i\)</span>, placing <span class="arithmatex">\(G\)</span> in the
-intersection <span class="arithmatex">\(⋂ P_i\)</span>. The parachute lattice, therefore, serves as a conceptual blueprint
-for how multiple cf-IE constraints could be simultaneously imposed on a single group
-<span class="arithmatex">\(G\)</span>, should the FLRP have a positive answer. The failure to find such a group <span class="arithmatex">\(G\)</span>, under
-increasingly restrictive (yet valid) cf-IE conditions, would provide evidence against
-the FLRP.</p>
+of the FLRP. This transforms the FLRP into a concrete group-theoretic problem: the
+search for a set of mutually incompatible cf-IE properties.</p>
+<p>The "parachute lattice" construction (Figure 4 of
+[<a href="#works-cited">1</a>] and reproduced below), denoted <span class="arithmatex">\(P(L, L_1, ..., L_n)\)</span>, is a key
+technical device used in proving the equivalence (B) ⟹ (C). This construction
+involves creating a new lattice P from a given lattice <span class="arithmatex">\(L\)</span> and a set of lattices
+<span class="arithmatex">\(L_1\)</span>, ..., <span class="arithmatex">\(L_n\)</span> (where each <span class="arithmatex">\(L_i\)</span> is known to enforce a cf-IE property <span class="arithmatex">\(P_i\)</span>). If
+statement (B) holds, then <span class="arithmatex">\(P\)</span> must be representable as a core-free interval <span class="arithmatex">\([H, G]\)</span>
+for some group <span class="arithmatex">\(G\)</span>.  The structure of the parachute lattice then ensures that the
+sub-intervals within <span class="arithmatex">\([H, G]\)</span> corresponding to <span class="arithmatex">\(L_i\)</span> are also core-free intervals
+isomorphic to <span class="arithmatex">\(L_i\)</span>. Consequently, <span class="arithmatex">\(G\)</span> must possess each property <span class="arithmatex">\(P_i\)</span>, placing <span class="arithmatex">\(G\)</span>
+in the intersection <span class="arithmatex">\(⋂ P_i\)</span>. The parachute lattice, therefore, serves as a conceptual
+blueprint for how multiple cf-IE constraints could be simultaneously imposed on a
+single group <span class="arithmatex">\(G\)</span>, should the FLRP have a positive answer. The failure to find such a
+group <span class="arithmatex">\(G\)</span>, under increasingly restrictive (yet valid) cf-IE conditions, would provide
+evidence against the FLRP.</p>
 <p><img alt="Parachute construction" height="200" src="../../assets/parachuteHG.png" width="300" /></p>
 <p>Furthermore, Corollary 3.9 of [<a href="#works-cited">1</a>], which follows from the parachute
 construction logic, states that the conjunction of any finite number of cf-IE
@@ -1227,10 +1232,9 @@ intersection).</p>
 <h3 id="14-illustrative-example-insights-from-the-analysis-of-l_7">1.4. Illustrative Example: Insights from the Analysis of <span class="arithmatex">\(L_7\)</span></h3>
 <p>DeMeo's paper provides a compelling illustration of this strategy through a detailed
 analysis of a specific seven-element lattice, denoted <span class="arithmatex">\(L_7\)</span>. (Figure 4 of
-[<a href="#works-cited">1</a>] and reproduced below.)
-This lattice is notable as
-it is the smallest for which a congruence lattice representation 
-(<span class="arithmatex">\(L_7 ≅ \mathrm{Con}(A)\)</span> for some finite algebra A) has not yet been found.[<a href="#works-cited">1</a>]</p>
+[<a href="#works-cited">1</a>] and reproduced below.) This lattice is notable as it is the
+smallest for which a congruence lattice representation (<span class="arithmatex">\(L_7 ≅ \mathrm{Con}(A)\)</span> for
+some finite algebra A) is not yet known.[<a href="#works-cited">18</a>, <a href="#works-cited">19</a>]</p>
 <p><img alt="L7 lattice" height="200" src="../../assets/l7.png" width="300" /></p>
 <p>Proposition 4.1 of [<a href="#works-cited">1</a>] outlines a set of strong group-theoretic
 properties that any finite group <span class="arithmatex">\(G\)</span> must possess if <span class="arithmatex">\(L_7\)</span> is isomorphic to a core-free
@@ -1265,7 +1269,7 @@ can impose a formidable list of cf-IE properties on any group <span class="arith
 it as a core-free interval. These derived properties significantly narrow the class
 of potential candidate groups <span class="arithmatex">\(G\)</span>. The internal structure of the lattice <span class="arithmatex">\(L_7\)</span>
 itself---its specific configuration of meets, joins, and elements like the
-non-modular element K---is what drives the deduction of these
+non-modular element <span class="arithmatex">\(K\)</span>---is what drives the deduction of these
 group properties, often in conjunction with group-theoretic tools like Dedekind's
 rule and Lemma 3.5 (concerning permuting subgroups).[<a href="#works-cited">1</a>] This
 highlights that a deep understanding of how lattice-theoretic features translate into
@@ -1313,8 +1317,9 @@ non-constant unary polynomial is a permutation of its domain.[<a href="#works-ci
 <li><em>Type 5 (Semilattice)</em>: pol-equiv to the two-element semilattice.</li>
 </ol>
 <p>This classification allows each prime quotient α ≺ β in <span class="arithmatex">\(\mathrm{Con}(A)\)</span> to be
-assigned one of these five types, transforming <span class="arithmatex">\(\mathrm{Con}(A)\)</span> into a <strong>labeled congruence lattice</strong>.2 This
-labeling provides a "local flavor" for the algebra at each prime quotient.</p>
+assigned one of these five types, transforming <span class="arithmatex">\(\mathrm{Con}(A)\)</span> into a 
+<em>labeled congruence lattice</em>.[<a href="#works-cited">2</a>] This labeling provides a "local
+flavor" for the algebra at each prime quotient.</p>
 <p>The connection to DeMeo's framework arises when considering the algebra 
 <span class="arithmatex">\(A_G = ⟨G/H, ϕ(G)⟩\)</span>, whose congruence lattice is isomorphic to the interval <span class="arithmatex">\([H, G]\)</span> when <span class="arithmatex">\(H\)</span> is
 core-free.[<a href="#works-cited">1</a>] Thus, a TCT analysis of a lattice <span class="arithmatex">\(L\)</span>, when <span class="arithmatex">\(L ≅ [H, G]\)</span>, is
@@ -1376,7 +1381,7 @@ information is synthesized from multiple sources.[<a href="#works-cited">2</a>]<
 <p>TCT reveals deep connections between the local types present in <span class="arithmatex">\(\mathrm{Con}(A)\)</span> and global
 properties of the algebra <span class="arithmatex">\(A\)</span> and the variety <span class="arithmatex">\(V(A)\)</span> it generates. A variety is a class
 of algebras closed under homomorphic images, subalgebras, and direct products.
-(Alternatively, and equivalently, according to Birkhoff's HSP Theorem, a variety is
+(Alternatively, and equivalently according to Birkhoff's HSP Theorem, a variety is
 an <em>equational class</em> of algebras.)</p>
 <p><strong>Omitting Types and Malt'sev Conditions</strong>. A particularly powerful aspect of TCT is
 the characterization of varieties that omit certain sets of types. Such omissions are
@@ -1403,15 +1408,15 @@ sets of term identities.[<a href="#works-cited">6</a>] For locally finite variet
    in {3, 4} and all its minimal sets have empty tails.[<a href="#works-cited">10</a>]</li>
 </ul>
 <p>These equivalences provide a pathway: if the structure of a lattice <span class="arithmatex">\(L\)</span> (as <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>) forces the omission or presence of certain TCT types in <span class="arithmatex">\(A_G\)</span>, then <span class="arithmatex">\(A_G\)</span> (or <span class="arithmatex">\(V(A_G)\)</span>) must satisfy corresponding strong algebraic conditions. The primary challenge, then, is to translate these algebraic properties of <span class="arithmatex">\(A_G\)</span> (e.g., "possesses a Taylor term") into meaningful group-theoretic properties of <span class="arithmatex">\(G\)</span> that can be shown to be cf-IE.</p>
-<p><strong>Solvability and Abelianness:</strong> Commutator theory for congruences defines notions of
+<p><strong>Solvability and Abelianness</strong>. Commutator theory for congruences defines notions of
 solvable and abelian congruences. A prime quotient α ≺ β is <strong>abelian</strong> if the
-commutator [β, β] is less than or equal to α. An interval I[δ, θ] is <strong>solvable</strong> if
-it has a finite chain of congruences δ = γ0 ≺ γ1 ≺ ⋯ ≺ γk = θ such that each factor
-I[γi, γi+1] is abelian.[<a href="#works-cited">12</a>]</p>
+commutator [β, β] is less than or equal to α. An interval <span class="arithmatex">\(I[δ, θ]\)</span> is <strong>solvable</strong> if
+it has a finite chain of congruences <span class="arithmatex">\(δ = γ_0 ≺ γ_1 ≺ ⋯ ≺ γ_k = θ\)</span> such that each factor
+<span class="arithmatex">\(I[γ_i, γ_{i+1}]\)</span> is abelian.[<a href="#works-cited">12</a>]</p>
 <ul>
 <li>Prime quotients of <strong>type 2</strong> (affine) are always abelian.[<a href="#works-cited">2</a>]</li>
 <li>Prime quotients of <strong>type 1</strong> (unary) can be either abelian or non-abelian.[<a href="#works-cited">2</a>]</li>
-<li>If an interval I[δ, θ] is solvable, then all its prime factors must be of type 1
+<li>If an interval <span class="arithmatex">\(I[δ, θ]\)</span> is solvable, then all its prime factors must be of type 1
    or type 2 [<a href="#works-cited">2</a> (Theorem 7.12)].  This connection is significant because if a lattice
    <span class="arithmatex">\(L\)</span>, when represented as <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>, forces certain intervals to be solvable or certain
    quotients to be abelian (or non-abelian), this imposes strict TCT type constraints
@@ -1427,39 +1432,41 @@ very little structural insight into it.[<a href="#works-cited">3</a>]</p>
 significant. When tails are empty, the local structure is fully "tame," and the
 analytical power of TCT can be most effectively applied. The presence of non-empty
 tails, especially for types 1 or 5, is intrinsically linked to failures of congruence
-modularity. For instance, if a minimal set of type i ∈ {2, 3, 4, 5} has a non-empty
+modularity. For instance, if a minimal set of type <span class="arithmatex">\(i ∈ \{2, 3, 4, 5\}\)</span> has a non-empty
 tail, it forces the existence of a pentagonal sublattice N5 (a hallmark of
-non-modularity) of type i in the congruence lattice of some subalgebra of <span class="arithmatex">\(A^2\)</span>.
+non-modularity) of type <span class="arithmatex">\(i\)</span> in the congruence lattice of some subalgebra of <span class="arithmatex">\(A^2\)</span>.
 Conversely, strong conditions on the labeled congruence lattice, such as the absence
 of such pentagons, can force tails to be empty.[<a href="#works-cited">3</a>]</p>
 <p>For a locally finite variety <span class="arithmatex">\(V\)</span> to be <strong>congruence modular</strong>, two conditions must be
-met: its type set must be restricted to {2,3,4} (i.e., types 1 and 5 must be
+met: its type set must be restricted to {2, 3, 4} (i.e., types 1 and 5 must be
 omitted), AND all minimal sets associated with these types must have empty tails.[<a href="#works-cited">3</a>]
 The "empty tails" condition is thus a critical component of "tameness" in the context
-of well-behaved varieties like congruence modular ones. If a lattice <span class="arithmatex">\(L\)</span>, interpreted
-as <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>, were to force <span class="arithmatex">\(A_G\)</span> to have minimal sets with non-empty tails of type 1 or
-5, this would indicate a certain "wildness" in <span class="arithmatex">\(A_G\)</span> and imply that <span class="arithmatex">\(V(A_G)\)</span> is not
-congruence modular. Such "wildness," if translatable into a group-theoretic property,
-could be a candidate for a cf-IE property. The challenge remains in formalizing
-"wildness" (e.g., non-empty tails of specific types) as an algebraic property of <span class="arithmatex">\(A_G\)</span>
-that subsequently translates into a cf-IE group property of <span class="arithmatex">\(G\)</span>.</p>
+of well-behaved varieties like congruence modular ones.</p>
+<p>If a lattice <span class="arithmatex">\(L\)</span>, interpreted as <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>, were to force <span class="arithmatex">\(A_G\)</span> to have
+minimal sets with non-empty tails of type 1 or 5, this would indicate a certain
+"wildness" in <span class="arithmatex">\(A_G\)</span> and imply that <span class="arithmatex">\(V(A_G)\)</span> is not congruence modular. Such
+"wildness," if translatable into a group-theoretic property, could be a candidate for
+a cf-IE property. The challenge remains in formalizing "wildness" (e.g., non-empty
+tails of specific types) as an algebraic property of <span class="arithmatex">\(A_G\)</span> that subsequently
+translates into a cf-IE group property of <span class="arithmatex">\(G\)</span>.</p>
 <h2 id="3-defining-enforceable-properties-via-tame-congruence-theory">3. Defining Enforceable Properties via Tame Congruence Theory</h2>
 <p>This section explores concrete ways TCT concepts can be harnessed to define new cf-IE
 group properties, focusing on the crucial step of translating properties of <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>
 or the algebra <span class="arithmatex">\(A_G\)</span> itself into properties of the group <span class="arithmatex">\(G\)</span>.</p>
 <h3 id="31-leveraging-tct-types-proposing-cf-ie-properties-based-on-the-presence-or-omission-of-specific-tct-types-or-type-configurations-in-mathrmcona_g">3.1. Leveraging TCT Types: Proposing cf-IE properties based on the presence or omission of specific TCT types or type configurations in <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>.</h3>
 <p>A primary avenue for defining new enforceable properties through TCT involves the set
-of types present in <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> (which is isomorphic to the interval L ≅ [H, G] when H is core-free).</p>
+of types present in <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> (which is isomorphic to the interval 
+<span class="arithmatex">\(L ≅ [H, G]\)</span> when <span class="arithmatex">\(H\)</span> is core-free).</p>
 <ul>
-<li><strong>Properties Based on Type Omission</strong>. If a lattice L, by its structure, forces any
-   algebra A for which <span class="arithmatex">\(\mathrm{Con}(A) ≅ L\)</span> to omit certain TCT types from its type set (or
-   from the type set of the variety V(A) it generates), this leads to strong
+<li><strong>Properties Based on Type Omission</strong>. If a lattice <span class="arithmatex">\(L\)</span>, by its structure, forces any
+   algebra <span class="arithmatex">\(A\)</span> for which <span class="arithmatex">\(\mathrm{Con}(A) ≅ L\)</span> to omit certain TCT types from its type set (or
+   from the type set of the variety <span class="arithmatex">\(V(A)\)</span> it generates), this leads to strong
    algebraic consequences. For instance:</li>
 <li>If <span class="arithmatex">\(L\)</span> forces <span class="arithmatex">\(V(A_G)\)</span> to omit <strong>type 1</strong> (unary type), then <span class="arithmatex">\(A_G\)</span> must
        possess a Taylor term, and <span class="arithmatex">\(V(A_G)\)</span> is a Taylor variety.[<a href="#works-cited">6</a>]</li>
 <li>If <span class="arithmatex">\(L\)</span> forces <span class="arithmatex">\(V(A_G)\)</span> to omit <strong>types {1,5}</strong> (unary and semilattice types), then
        <span class="arithmatex">\(A_G\)</span> must satisfy a non-trivial congruence identity and possess a Hobby-McKenzie
-       term.[<a href="#works-cited">6</a>] The critical step is then to determine if "G is a
+       term.[<a href="#works-cited">6</a>] The critical step is then to determine if "<span class="arithmatex">\(G\)</span> is a
        group such that <span class="arithmatex">\(A_G\)</span> has a Taylor term (or satisfies a given congruence
        identity)" can be established as a cf-IE property of <span class="arithmatex">\(G\)</span>, meaning it is
        enforceable by some (potentially different) lattice <span class="arithmatex">\(L′\)</span>. This translation
@@ -1476,78 +1483,81 @@ of types present in <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> (which
 </ul>
 <p>The "empty tails" condition is an important qualifier. Properties like "<span class="arithmatex">\(V(A_G)\)</span> omits
 type 1 AND has empty tails for all its minimal sets" would be stronger and more
-directly related to conditions like congruence modularity.3 The translation
-bottleneck remains: how does an algebraic property of <span class="arithmatex">\(A_G\)</span> (like "<span class="arithmatex">\(V(A_G)\)</span> is congruence
-modular") translate to a cf-IE group property of <span class="arithmatex">\(G\)</span>?</p>
+directly related to conditions like congruence modularity.[<a href="#works-cited">2</a>]</p>
+<p>The translation hurdle remains: how does an algebraic property of <span class="arithmatex">\(A_G\)</span> (like
+"<span class="arithmatex">\(V(A_G)\)</span> is congruence modular") translate to a cf-IE group property of <span class="arithmatex">\(G\)</span>?</p>
 <h3 id="32-exploiting-geometric-constraints-in-labeled-congruence-lattices">3.2. Exploiting Geometric Constraints in Labeled Congruence Lattices</h3>
 <p>The geometric configuration of prime quotients within <span class="arithmatex">\(\mathrm{Con}(A) ≅ L\)</span> imposes constraints on their TCT type labels.</p>
 <ul>
-<li><strong>Perspectivity and Projectivity</strong>. Two prime quotients I1​=I[α, β] and I2​=I[γ, δ]
-   in <span class="arithmatex">\(\mathrm{Con}(A)\)</span> are <strong>perspective</strong> if they are opposite sides of a diamond (M3
-   configuration, e.g., α=γ∧δ and β=γ∨δ) or a pentagon (N5 configuration).
+<li><strong>Perspectivity and Projectivity</strong>. Two prime quotients <span class="arithmatex">\(I_1​ = I[α, β]\)</span> and 
+   <span class="arithmatex">\(I_2​ = I[γ, δ]\)</span> in <span class="arithmatex">\(\mathrm{Con}(A)\)</span> are <strong>perspective</strong> if they are opposite
+   sides of a diamond (M3) or a pentagon (N5) (in which case, <span class="arithmatex">\(α = β ∧ γ\)</span> and <span class="arithmatex">\(δ = β ∨ γ\)</span>). 
    <strong>Projectivity</strong> is a sequence of perspectivities. A fundamental result in TCT
    (often detailed in Chapter 6 of Hobby &amp; McKenzie, e.g., Lemmas 6.2--6.6) is that
    if two prime quotients are projective, they must have the same TCT type, provided
    certain conditions hold (e.g., the projectivity avoids type 1 quotients or the
-   lattice is modular).2 This "type consistency under projectivity" is a powerful
-   constraint.</li>
-<li><strong>N5 (Pentagon) Subconfigurations</strong>. If L≅<span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> contains an N5 sublattice, then
-   <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> is non-modular. This forces <span class="arithmatex">\(V(A_G)\)</span> to admit TCT types 1 or 5. The prime
-   quotients forming the N5 configuration will be labeled accordingly, with at least
-   one of them (often the critical quotient) being of type 1 or 5 [2 (Corollary
-   5.20); 15].</li>
-<li><strong>M3 (Diamond) Subconfigurations</strong>. If L≅<span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> contains an M3 sublattice, then
-   <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> is non-distributive. If <span class="arithmatex">\(V(A_G)\)</span> were congruence distributive, it would omit
-   types 1, 2, and 5. Therefore, the presence of an M3 implies that <span class="arithmatex">\(V(A_G)\)</span> is not
-   congruence distributive, and thus must admit type 1, 2, or 5. Furthermore, if
-   <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> is modular (which M3 itself is), types 1 and 5 are omitted from modular
-   intervals unless specific conditions apply (related to solvability). A variety is
-   congruence meet-semidistributive (SD(∧)) if and only if M3 is not embeddable in
-   <span class="arithmatex">\(\mathrm{Con}(A)\)</span> for any A∈V; SD(∧) is equivalent to omitting types {1,2}.8 Thus, the
-   presence of an M3 implies the variety is not SD(∧), meaning it must admit type 1
-   or type 2. If the interval containing M3 is known to be modular, this would point
-   towards type 2. The three covering quotients forming the "sides" of an M3 in a
-   modular lattice are perspective and thus must have the same type (from {2,3,4}).</li>
+   lattice is modular).[<a href="#works-cited">2</a>] This "type consistency under projectivity"
+   is a powerful constraint.</li>
+<li><strong>N5 (Pentagon) Subconfigurations</strong>. If L≅<span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> contains an N5
+   sublattice, then <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> is non-modular. This forces <span class="arithmatex">\(V(A_G)\)</span> to admit
+   TCT types 1 or 5. The prime quotients forming the N5 configuration will be
+   labeled accordingly, with at least one of them (often the critical quotient) being
+   of type 1 or 5 [<a href="#works-cited">2 (Corollary 5.20)</a>, <a href="#works-cited">15</a>].</li>
+<li><strong>M3 (Diamond) Subconfigurations</strong>. If <span class="arithmatex">\(L ≅ \mathrm{Con}(A_G)\)</span> contains an M3
+   sublattice, then <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> is non-distributive. If <span class="arithmatex">\(V(A_G)\)</span> were
+   congruence distributive, it would omit types 1, 2, and 5. Therefore, the presence
+   of an M3 implies that <span class="arithmatex">\(V(A_G)\)</span> is not congruence distributive, and thus must admit
+   type 1, 2, or 5.  Furthermore, if <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> is modular (which M3 itself
+   is), types 1 and 5 are omitted from modular intervals unless specific conditions
+   apply (related to solvability).</li>
 </ul>
-<p>These geometric constraints offer a direct mechanism for L to enforce TCT types on
-<span class="arithmatex">\(A_G\)</span>. For example, if Ltarget​ contains an N5 configuration, then any group G
-representing Ltarget​ as <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> must be such that <span class="arithmatex">\(A_G\)</span> admits type 1 or 5. This
-admission of "wilder" types becomes an algebraic property of <span class="arithmatex">\(A_G\)</span>, which then needs to
-be translated into a cf-IE group property of <span class="arithmatex">\(G\)</span>. The analysis of <span class="arithmatex">\(L_7\)</span> in DeMeo's paper
-implicitly uses such geometric reasoning; for instance, its non-modularity
-contributes to the derived properties of <span class="arithmatex">\(G\)</span>.</p>
+<p>A variety is congruence meet-semidistributive (SD(∧)) if and only if M3 is not
+   embeddable in <span class="arithmatex">\(\mathrm{Con}(A)\)</span> for any <span class="arithmatex">\(A ∈ V\)</span>; SD(∧) is equivalent to omitting
+   types {1, 2}.[<a href="#works-cited">8</a>]  Thus, the presence of an M3 implies the variety
+   is not SD(∧), meaning it must admit type 1 or type 2.  If the interval containing
+   M3 is known to be modular, this would point towards type 2. The three covering
+   quotients forming the "sides" of an M3 in a modular lattice are perspective and
+   thus must have the same type (from {2, 3, 4}).</p>
+<p>These geometric constraints offer a direct mechanism for <span class="arithmatex">\(L\)</span> to enforce TCT types on
+<span class="arithmatex">\(A_G\)</span>. For example, if <span class="arithmatex">\(L_{\mathrm{target}}\)</span> contains an N5 configuration, then any
+group <span class="arithmatex">\(G\)</span> representing <span class="arithmatex">\(L_{\mathrm{target}}\)</span> as <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> must be such that
+<span class="arithmatex">\(A_G\)</span> admits type 1 or 5. This admission of "wilder" types becomes an algebraic
+property of <span class="arithmatex">\(A_G\)</span>, which then needs to be translated into a cf-IE group property of
+<span class="arithmatex">\(G\)</span>. The analysis of <span class="arithmatex">\(L_7\)</span> in DeMeo's paper implicitly uses such geometric reasoning;
+for instance, its non-modularity contributes to the derived properties of <span class="arithmatex">\(G\)</span>.</p>
 <h3 id="33-the-role-of-solvableabelian-congruence-quotients-and-their-tct-type-correlates">3.3. The Role of Solvable/Abelian Congruence Quotients and their TCT Type Correlates</h3>
 <p>The notions of solvability and abelianness for congruence quotients are deeply
 connected to TCT types.</p>
 <ul>
 <li>
-<p>A prime quotient I[α, β] is <strong>abelian</strong> if the commutator [β, β] ≤ α. All type 2
+<p>A prime quotient <span class="arithmatex">\(I[α, β]\)</span> is <strong>abelian</strong> if the commutator [β, β] ≤ α. All type 2
    (affine) quotients are abelian. Type 1 (unary) quotients can be either abelian or
-   non-abelian.2 Types 3, 4, and 5 are non-abelian.</p>
+   non-abelian.[<a href="#works-cited">2</a>]. Types 3, 4, and 5 are non-abelian.</p>
 </li>
 <li>
-<p>An interval I[δ, θ] is <strong>solvable</strong> if it has a composition series where each
+<p>An interval <span class="arithmatex">\(I[δ, θ]\)</span> is <strong>solvable</strong> if it has a composition series where each
    prime factor is abelian. Consequently, if an interval is solvable, all its prime
-   factors must be of type 1 or type 2 [2 (Theorem 7.12)].</p>
+   factors must be of type 1 or type 2. [<a href="#works-cited">2 (Theorem 7.12)</a>]</p>
 </li>
 </ul>
-<p>If the structure of a lattice L (when L ≅ <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>) forces certain intervals in
+<p>If the structure of a lattice <span class="arithmatex">\(L\)</span> (when <span class="arithmatex">\(L ≅ \mathrm{Con}(A_G)\)</span>) forces certain intervals in
 <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> to be solvable, or certain prime quotients to be abelian (or non-abelian),
-this imposes strict constraints on the TCT types present.  For instance, if L forces
-a prime quotient in <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> to be non-abelian, then that quotient cannot be of type 2
-and, if type 1, must be a non-abelian type 1. DeMeo's result that insolubility of G
-is IE [<a href="#works-cited">1</a>] is an example of how such properties might connect; if <span class="arithmatex">\(A_G\)</span> having only
-solvable congruence quotients implied <span class="arithmatex">\(G\)</span> is solvable, then a lattice L forcing a
-non-solvable quotient in <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> might enforce G's insolubility. This link between
-the TCT commutator and group-theoretic solvability/nilpotency is a promising area for
-defining cf-IE properties.</p>
+then this imposes strict constraints on the TCT types present.  For instance, if <span class="arithmatex">\(L\)</span> forces
+a prime quotient in <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> to be non-abelian, then that quotient cannot
+be of type 2 and, if type 1, must be a non-abelian type 1. DeMeo's result that
+insolubility of <span class="arithmatex">\(G\)</span> is IE [<a href="#works-cited">1</a>] is an example of how such properties
+might connect; if <span class="arithmatex">\(A_G\)</span> having only solvable congruence quotients implied <span class="arithmatex">\(G\)</span> is
+solvable, then a lattice <span class="arithmatex">\(L\)</span> forcing a non-solvable quotient in <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>
+might enforce <span class="arithmatex">\(G\)</span>'s insolubility. This link between the TCT commutator and
+group-theoretic solvability/nilpotency is a promising area for defining cf-IE
+properties.</p>
 <h2 id="4-assessing-the-combined-strategy-synergies-potential-and-challenges">4. Assessing the Combined Strategy: Synergies, Potential, and Challenges</h2>
 <p>This section critically evaluates the feasibility and potential impact of the
 combined DeMeo-TCT approach to the FLRP.</p>
 <h3 id="41-potential-for-progress-the-path-to-contradiction">4.1. Potential for Progress: The Path to Contradiction</h3>
-<p>The central strategy, as illuminated by DeMeo's Theorem 3.6 [<a href="#works-cited">1</a>], is to identify a
-collection of cf-IE group properties whose intersection is empty. If such a
-collection {Pj​} exists, then the FLRP would have a negative answer. Tame Congruence
+<p>The central strategy, as illuminated by DeMeo's Theorem 3.6 [<a href="#works-cited">1</a>], is
+to identify a collection of cf-IE group properties whose intersection is empty. If such a
+collection <span class="arithmatex">\(\{P_j\}\)</span> exists, then the FLRP would have a negative answer. Tame Congruence
 Theory offers a powerful new toolkit to define candidate cf-IE properties.</p>
 <p>The synergy unfolds as follows:</p>
 <ol>
@@ -1558,15 +1568,16 @@ Theory offers a powerful new toolkit to define candidate cf-IE properties.</p>
     has a positive answer.</p>
 </li>
 <li>
-<p>TCT provides a rich vocabulary of algebraic properties (Palg​) associated with the
-    structure of <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> (which is isomorphic to the lattice interval L ≅ [H, G]). 
+<p>TCT provides a rich vocabulary of algebraic properties (<span class="arithmatex">\(P_{\mathrm{alg}}\)</span>)
+    associated with the structure of <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> (which is isomorphic to the
+    lattice interval <span class="arithmatex">\(L ≅ [H, G]\)</span>). 
     These properties are based on TCT types, type configurations, solvability,
     abelianness, and tail conditions.</p>
 </li>
 <li>
 <p>The research objective is to translate these TCT-derived algebraic properties of
-    <span class="arithmatex">\(A_G\)</span> into group-theoretic properties (<span class="arithmatex">\(P_{grp}\)</span>​) of G, and then to prove that these <span class="arithmatex">\(P_{grp}\)</span>​
-    are indeed cf-IE, i.e., enforceable by some lattice.</p>
+    <span class="arithmatex">\(A_G\)</span> into group-theoretic properties (<span class="arithmatex">\(P_{grp}\)</span>​) of <span class="arithmatex">\(G\)</span>, and then to prove that
+    these <span class="arithmatex">\(P_{\mathrm{grp}}\)</span>​ are indeed cf-IE, i.e., enforceable by some lattice.</p>
 </li>
 </ol>
 <p>If a set of such TCT-derived cf-IE group properties, possibly combined with known
@@ -1581,10 +1592,10 @@ would be unrepresentable by any group as a core-free interval, falsifying statem
 <p>A subtle but critical distinction must be maintained: a "forcing lattice" versus an
 "enforcing lattice." A specific lattice Ltarget (e.g., <span class="arithmatex">\(L_7\)</span> or a parachute lattice)
 might, by its structure, <em>force</em> <span class="arithmatex">\(A_G\)</span> (where Ltarget ≅ <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>) to exhibit certain TCT
-characteristics, which in turn imply a group property <span class="arithmatex">\(P_{grp}\)</span>​ for <span class="arithmatex">\(G\)</span>.  However, for <span class="arithmatex">\(P_{grp}\)</span>​
+characteristics, which in turn imply a group property <span class="arithmatex">\(P_{\mathrm{grp}}\)</span>​ for <span class="arithmatex">\(G\)</span>.  However, for <span class="arithmatex">\(P_{\mathrm{grp}}\)</span>​
 to be a cf-IE property in DeMeo's sense, there must exist some lattice <span class="arithmatex">\(L\_{\mathrm{enforce}}\)</span>
 (which could be different from Ltarget​) such that <em>any</em> group X representing <span class="arithmatex">\(L\_{\mathrm{enforce}}\)</span>
-as a core-free interval [K, X] must possess property <span class="arithmatex">\(P_{grp}\)</span>​. This two-layered lattice
+as a core-free interval [K, X] must possess property <span class="arithmatex">\(P_{\mathrm{grp}}\)</span>​. This two-layered lattice
 argumentation is essential for the logical integrity of applying Theorem 3.6. The
 TCT-derived cf-IE properties are somewhat self-referential in this regard: the
 "enforcing lattice" <span class="arithmatex">\(L_{P_i}\)</span> for a TCT-derived property <span class="arithmatex">\(P_i\)</span> would itself need to be a
@@ -1706,12 +1717,12 @@ relevant to the FLRP.</p>
     non-trivial way.</p>
 </li>
 <li>
-<p><strong>Proving cf-IE Nature</strong>. Even if a candidate group-theoretic property <span class="arithmatex">\(P\_{grp}\)</span>
+<p><strong>Proving cf-IE Nature</strong>. Even if a candidate group-theoretic property <span class="arithmatex">\(P_{\mathrm{grp}}\)</span>
     is derived from TCT considerations, proving it is cf-IE (i.e., finding a lattice
-    <span class="arithmatex">\(L\_{\mathrm{enforce}}\)</span> that enforces <span class="arithmatex">\(P_{grp}\)</span>​ on any group X representing
-    <span class="arithmatex">\(L\_{\mathrm{enforce}}\)</span>​ as a core-free interval) is a significant task.  DeMeo's
-    paper provides examples, but each such proof is a research result in its own
-    right.[<a href="#works-cited">1</a>]</p>
+    <span class="arithmatex">\(L_{\mathrm{enforce}}\)</span> that enforces <span class="arithmatex">\(P_{\mathrm{grp}}\)</span>​ on any group <span class="arithmatex">\(X\)</span> representing
+    <span class="arithmatex">\(L_{\mathrm{enforce}}\)</span>​ as a core-free interval) is a significant task.  In 
+    [<a href="#works-cited">1</a>] DeMeo provides examples, but each such proof is a research
+    result in its own right.</p>
 </li>
 <li><strong>Complexity of TCT:</strong> TCT is a highly technical and intricate theory. Correctly
     applying its full depth to derive robust enforceable properties, and then
@@ -1721,15 +1732,15 @@ relevant to the FLRP.</p>
      challenge in group theory. TCT may help identify new candidate properties, but
      the final proof of an empty intersection is a group-theoretic problem.</li>
 <li><strong>Group Representability of Enforcing Lattices:</strong> For a TCT-derived cf-IE
-     property to be useful in DeMeo's strategy (e.g., Conjecture 3.1 regarding a
-     property and its negation [<a href="#works-cited">1</a>]), the lattice
-     <span class="arithmatex">\(L\_{\mathrm{enforce}}\)</span>​ that enforces it must itself be "group representable"
-     (isomorphic to an interval in some group's subgroup lattice). Establishing this
-     for potentially complex lattices arising from TCT considerations may not be
-     straightforward.</li>
+     property to be useful in DeMeo's strategy (e.g., 
+     [<a href="#works-cited">1 (Conjecture 3.1)</a>] regarding a property and its negation ),
+     the lattice <span class="arithmatex">\(L_{\mathrm{enforce}}\)</span>​ that enforces it must itself be "group
+     representable" (isomorphic to an interval in some group's subgroup lattice). 
+     Establishing this for potentially complex lattices arising from TCT
+     considerations may not be straightforward.</li>
 </ol>
-<p>The path from the TCT properties of Con(G/H) to cf-IE properties of <span class="arithmatex">\(G\)</span> is the most
-critical and least explored part of this proposed strategy. It requires a deep
+<p>The path from the TCT properties of <span class="arithmatex">\(\mathrm{Con}(G/H)\)</span> to cf-IE properties of <span class="arithmatex">\(G\)</span> is
+the most critical and least explored part of this proposed strategy. It requires a deep
 understanding of how the action of <span class="arithmatex">\(G\)</span> on <span class="arithmatex">\(G/H\)</span> reflects back onto the structure of <span class="arithmatex">\(G\)</span>
 itself, in a way that is conditionable by lattice interval structures.</p>
 <h2 id="5-concluding-analysis-and-strategic-recommendations">5. Concluding Analysis and Strategic Recommendations</h2>
@@ -1738,12 +1749,12 @@ itself, in a way that is conditionable by lattice interval structures.</p>
 enforceable properties offers a novel and potentially powerful approach to the Finite
 Lattice Representation Problem.  TCT provides a sophisticated lens to analyze the
 structure of <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> (where <span class="arithmatex">\(A_G\)</span> is the algebra whose congruence lattice is isomorphic
-to the given interval [H, G]), potentially revealing algebraic properties of <span class="arithmatex">\(A_G\)</span> that
+to the given interval <span class="arithmatex">\([H, G]\)</span>), potentially revealing algebraic properties of <span class="arithmatex">\(A_G\)</span> that
 were previously inaccessible.  DeMeo's Theorem 3.6 provides a clear pathway: if a
 collection of cf-IE group properties can be found whose intersection is empty, the
 FLRP would be negatively resolved.  The primary promise of the combined strategy lies
 in TCT's ability to furnish new candidate algebraic properties of <span class="arithmatex">\(A_G\)</span>, which, if
-successfully translated into cf-IE group properties of G, could enrich the set of
+successfully translated into cf-IE group properties of <span class="arithmatex">\(G\)</span>, could enrich the set of
 constraints applicable under Theorem 3.6, thereby increasing the chances of finding
 such an empty intersection.</p>
 <p>The strength of this combined approach is its multi-layered attack, leveraging the
@@ -1780,9 +1791,9 @@ structural insights into the congruence lattices that bridge these domains.</p>
     Once a group property <span class="arithmatex">\(P_{grp}\)</span>​ is hypothesized from TCT analysis of <span class="arithmatex">\(A_G\)</span>, it
     must be proven to be cf-IE.  This requires finding a lattice
     <span class="arithmatex">\(L_{\mathrm{enforce}}\)</span>​ such that <span class="arithmatex">\(L_{\mathrm{enforce}} ​≅ [K, X]\)</span> (<span class="arithmatex">\(K\)</span> core-free)
-    implies <span class="arithmatex">\(X ⊨ P_{grp}\)</span>​. This may involve constructing specific lattices whose
-    structure inherently forces the desired TCT behavior on any algebra representing
-    them, which in turn forces <span class="arithmatex">\(P_{grp}\)</span>​.</p>
+    implies <span class="arithmatex">\(X ⊨ P_{\mathrm{grp}}\)</span>​. This may involve constructing specific lattices
+    whose structure inherently forces the desired TCT behavior on any algebra representing
+    them, which in turn forces <span class="arithmatex">\(P_{\mathrm{grp}}\)</span>​.</p>
 </li>
 <li>
 <p><strong>Exploiting Geometric Constraints in Labeled Congruence Lattices</strong>.
@@ -1792,10 +1803,10 @@ structural insights into the congruence lattices that bridge these domains.</p>
     is needed. The rules from Hobby &amp; McKenzie's Chapter 6 on labeled congruence
     lattices are foundational here.[<a href="#works-cited">2</a>]</p>
 <ul>
-<li><strong>Question</strong>. If a lattice L contains projective prime quotients I1​ and I2​,
-TCT implies typ(I1​) = typ(I2​) (under suitable conditions).  Can this type
-equality, for specific types forced by <span class="arithmatex">\(L\)</span>'s structure, be translated into a cf-IE
-property of <span class="arithmatex">\(G\)</span>?</li>
+<li><strong>Question</strong>. If a lattice <span class="arithmatex">\(L\)</span> contains projective prime quotients <span class="arithmatex">\(I_1\)</span> and <span class="arithmatex">\(I_2\)</span>,
+TCT implies <span class="arithmatex">\(\mathrm{typ}(I_1) = \mathrm{typ}(I_2)\)</span> (under suitable conditions).<br />
+Can this type equality, for specific types forced by <span class="arithmatex">\(L\)</span>'s structure, be
+translated into a cf-IE property of <span class="arithmatex">\(G\)</span>?</li>
 </ul>
 </li>
 <li>
@@ -1816,7 +1827,7 @@ property of <span class="arithmatex">\(G\)</span>?</li>
 <li>
 <p><strong>Commutator Theory and TCT Types</strong>. The relationship between solvable/abelian
     congruence quotients (defined via the commutator) and TCT types 1 and 2 is
-    well-established.[<a href="#works-cited">2</a>]  If a lattice L forces certain
+    well-established.[<a href="#works-cited">2</a>]  If a lattice <span class="arithmatex">\(L\)</span> forces certain
     commutator-theoretic properties on <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>, this implies restrictions
     on types 1 and 2. This could lead to cf-IE properties related to the derived
     series or nilpotency class of <span class="arithmatex">\(G\)</span>.</p>
@@ -1847,6 +1858,9 @@ pattern.</p>
 <li>accessed December 31, 1969, <a href="https://math.hawaii.edu/~jb/math616s01/tct_notes.pdf">https://math.hawaii.edu/\~jb/math616s01/tct_notes.pdf</a>  </li>
 <li>arxiv.org, accessed May 26, 2025, <a href="https://arxiv.org/pdf/math/9609219">https://arxiv.org/pdf/math/9609219</a>  </li>
 <li>(PDF) An Easy Way to Minimal Algebras - ResearchGate, accessed May 26, 2025, <a href="https://www.researchgate.net/publication/228667296_An_Easy_Way_to_Minimal_Algebras">https://www.researchgate.net/publication/228667296_An_Easy_Way_to_Minimal_Algebras</a></li>
+<li>Congruence lattices of finite algebras and intervals in subgroup lattices of finite groups. Pálfy, P.P., Pudlák, P. Algebra Universalis 11(1), 22–27 (1980) <a href="http://dx.doi.org/10.1007/BF02483080">doi url</a>.</li>
+<li>Expansions of finite algebras and their congruence lattices (2012). William DeMeo; <a href="http://arxiv.org/abs/1205.1106">arxiv 1205.1106</a>.</li>
+<li>Congruence lattices of finite algebras. William DeMeo. PhD thesis, University of Hawai’i at Mānoa, Honolulu, HI, May 2012; <a href="http://arxiv.org/abs/1204.4305">arxiv 1204.4305</a>.</li>
 </ol>
 
 
