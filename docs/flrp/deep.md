@@ -383,7 +383,7 @@ The geometric configuration of prime quotients within $\mathrm{Con}(A) ≅ L$ im
    certain conditions hold (e.g., the projectivity avoids type 1 quotients or the
    lattice is modular).[[2](#works-cited)] This "type consistency under projectivity"
    is a powerful constraint.
-+  **N5 (Pentagon) Subconfigurations**. If L≅$\mathrm{Con}(A_G)$ contains an N5
++  **N5 (Pentagon) Subconfigurations**. If $L ≅ \mathrm{Con}(A_G)$ contains an N5
    sublattice, then $\mathrm{Con}(A_G)$ is non-modular. This forces $V(A_G)$ to admit
    TCT types 1 or 5\. The prime quotients forming the N5 configuration will be
    labeled accordingly, with at least one of them (often the critical quotient) being
@@ -504,31 +504,33 @@ enforcing lattice.
 
 | Property Type | Property Description (for Group $G$ or Algebra $A_G$≅G/H) | Known/ Candidate | Enforcing Lattice/Condition (Hypothesized for Candidates) | Notes / Connection of $A_G$ property to $G$ |
 | :---- | :---- | :---- | :---- | :---- |
-| DeMeo (Known) | $G$ is insoluble | Known | Pálfy's lattice LS​ (not representable by soluble groups) 1 | Direct group property. |
-| DeMeo (Known) | $G$ is not An​ or Sn​ (for any n) | Known | Lattices from Basile, Aschbacher & Shareshian 1 | Direct group property. |
-| DeMeo (Known, via $L_7$) | $G$ is subdirectly irreducible | Known if $L_7 ≅ [H, G]$ | $L_7$ 1 | Property of $G$ if $L_7$ is the interval. |
-| DeMeo (Known, via $L_7$) | For any $1 = N ◃ G$, $C_G(N) = 1$ | Known if $L_7 ≅ [H, G]$ | $L_7$ 1 | Property of $G$ if $L_7$ is the interval. |
-| TCT-derived (Cand.) | $V(A_G)$ omits TCT type 1 (is a Taylor variety) | Candidate | A lattice $L_{no−1}$ whose structure forces any $\mathrm{Con}(A) ≅ L_{no−1}$ to omit type 1\. | *Challenge*: Translate "V(G/H) has Taylor term" to a structural property of $G$. May relate to $G$ having no "unary-like" actions or specific chief factor properties. |
-| TCT-derived (Cand.) | $V(A_G)$ omits TCT types {1,5} (satisfies a non-trivial congruence identity) | Candidate | A lattice Lno−1,5​ whose structure forces omission of types {1,5}. | *Challenge*: Translate "V(G/H) satisfies cong. identity X" to a property of $G$. |
-| TCT-derived (Cand.) | $\mathrm{Con}(A_G)$ contains an N5 sublattice (hence types 1 or 5 must be present in $V(A_G)$) | Candidate | Any non-modular lattice LNM​. | If LNM​≅[H, G], then V(G/H) has types 1 or 5\. Could force $G$ to be non-CM (if tails are non-empty) or relate to specific simple sections of $G$. |
-| TCT-derived (Cand.) | $\mathrm{Con}(A_G)$ is modular (hence $V(A_G)$ omits types 1,5 and has empty tails for types {2,3,4}) | Candidate | A modular, non-distributive lattice LM​. | If LM​≅[H, G], V(G/H) is congruence modular. Strong constraint. May imply $G$ is solvable or has specific chief factor structures (e.g., only affine or simple non-abelian of specific TCT types). |
-| TCT-derived (Cand.) | An interval I\[α,β\] in $\mathrm{Con}(A_G)$ is solvable (all prime factors type 1 or 2\) | Candidate | A lattice L whose structure forces a specific interval to be solvable in any Con(A)≅L. | Forces local structure of Con(G/H) to be types 1 or 2\. $A_G$ has locally abelian/affine structure. Impact on G's derived series or commutator structure? |
+| DeMeo (Known) | $G$ is insoluble | Known | Pálfy's lattice LS​ (not representable by soluble groups) | Direct group property. |
+| DeMeo (Known) | $G$ is not An​ or Sn​ (for any n) | Known | Lattices from Basile, Aschbacher & Shareshian | Direct group property. |
+| DeMeo (Known, via $L_7$) | $G$ is subdirectly irreducible | Known if $L_7 ≅ [H, G]$ | $L_7$ | Property of $G$ if $L_7$ is the interval. |
+| DeMeo (Known, via $L_7$) | For any $1 = N ◃ G$, $C_G(N) = 1$ | Known if $L_7 ≅ [H, G]$ | $L_7$ | Property of $G$ if $L_7$ is the interval. |
+| TCT-derived (Cand.) | $V(A_G)$ omits TCT type 1 (is a Taylor variety) | Candidate | A lattice $L_{no−1}$ whose structure forces any $\mathrm{Con}(A) ≅ L_{no−1}$ to omit type 1\. | *Challenge*: Translate "$V(G/H)$ has Taylor term" to a structural property of $G$. May relate to $G$ having no "unary-like" actions or specific chief factor properties. |
+| TCT-derived (Cand.) | $V(A_G)$ omits TCT types {1,5} (satisfies a non-trivial congruence identity) | Candidate | A lattice $L_{no−1,5}$ whose structure forces omission of types {1, 5}. | *Challenge*: Translate "$V(G/H)$ satisfies cong. identity $X$" to a property of $G$. |
+| TCT-derived (Cand.) | $\mathrm{Con}(A_G)$ contains an N5 sublattice (hence types 1 or 5 must be present in $V(A_G)$) | Candidate | Any non-modular lattice $Lₙₘ$. | If $Lₙₘ ≅ [H, G]$, then $V(G/H)$ has types 1 or 5\. Could force $G$ to be non-CM (if tails are non-empty) or relate to specific simple sections of $G$. |
+| TCT-derived (Cand.) | $\mathrm{Con}(A_G)$ is modular (hence $V(A_G)$ omits types 1,5 and has empty tails for types {2,3,4}) | Candidate | A modular, non-distributive lattice $Lₘ$. | If $Lₘ ≅ [H, G]$, $V(G/H)$ is congruence modular. Strong constraint. May imply $G$ is solvable or has specific chief factor structures (e.g., only affine or simple non-abelian of specific TCT types). |
+| TCT-derived (Cand.) | An interval $I[α, β]$ in $\mathrm{Con}(A_G)$ is solvable (all prime factors type 1 or 2) | Candidate | A lattice $L$ whose structure forces a specific interval to be solvable in any $Con(A) ≅ L$. | Forces local structure of $Con(G/H)$ to be types 1 or 2. $A_G$ has locally abelian/affine structure. Impact on $G$'s derived series or commutator structure? |
 
 ### 4.2. Methodological Strengths
 
 The proposed combination of DeMeo's enforceability framework with TCT offers
 significant methodological advantages. TCT provides a systematic and deeply
 structural way to analyze $\mathrm{Con}(A_G)$ (which is isomorphic to the given lattice interval
-L). This goes beyond classical lattice theory, offering a classification of local
+$L$). This goes beyond classical lattice theory, offering a classification of local
 algebraic behaviors (the five types) and rules for how these types are distributed
 within the congruence lattice (e.g., type preservation under projectivity,
-constraints imposed by M3 or N5 subconfigurations) [[[2](#works-cited)] (Lemmas 5.19,
-6.2--6.6, 6.9, 6.10)].  The connection of TCT types to Malt'sev conditions and
-congruence identities provides a rich source of strong algebraic constraints on $A_G$.6
+constraints imposed by M3 or N5 subconfigurations).
+[[2 (Lemmas 5.19, 6.2--6.6, 6.9, 6.10)](#works-cited)] 
+
+The connection of TCT types to Malt'sev conditions and congruence identities provides
+a rich source of strong algebraic constraints on $A_G$.[[6](#works-cited)] 
 DeMeo's framework, particularly Theorem 3.6, then provides the crucial linkage from
 these (potentially new) algebraic properties of $A_G$ (if they can be translated into
 group-theoretic terms) to the FLRP itself.  The Pálfy-Pudlák theorem, combined with
-DeMeo's core-free condition, ensures that the TCT analysis of L ≅ $\mathrm{Con}(A_G)$ is directly
+DeMeo's core-free condition, ensures that the TCT analysis of $L ≅ \mathrm{Con}(A_G)$ is directly
 relevant to the FLRP.
 
 ### 4.3. Anticipated Hurdles and Challenges
@@ -536,7 +538,7 @@ relevant to the FLRP.
 Despite the promise, several substantial hurdles must be overcome.
 
 1.  **The Translation Problem**. The foremost challenge is translating algebraic
-    properties of $A_G$ (the G-set ⟨G/H, ϕ(G)⟩), derived from TCT analysis of L ≅ $\mathrm{Con}(A_G)$, 
+    properties of $A_G$ (the G-set ⟨G/H, ϕ(G)⟩), derived from TCT analysis of $L ≅ \mathrm{Con}(A_G)$, 
     into meaningful and provably cf-IE *group-theoretic properties* of $G$.
     For example, if TCT implies $A_G$ must have a Taylor term (because $\mathrm{Con}(A_G)$ omits
     type 1), it is not immediately clear what specific structural property this
@@ -546,8 +548,8 @@ Despite the promise, several substantial hurdles must be overcome.
 
 2.  **Proving cf-IE Nature**. Even if a candidate group-theoretic property $P_{\mathrm{grp}}$
     is derived from TCT considerations, proving it is cf-IE (i.e., finding a lattice
-    $L_{\mathrm{enforce}}$ that enforces $P_{\mathrm{grp}}$​ on any group $X$ representing
-    $L_{\mathrm{enforce}}$​ as a core-free interval) is a significant task.  In 
+    $L_{\mathrm{enf}}$ that enforces $P_{\mathrm{grp}}$​ on any group $X$ representing
+    $L_{\mathrm{enf}}$​ as a core-free interval) is a significant task.  In 
     [[1](#works-cited)] DeMeo provides examples, but each such proof is a research
     result in its own right.
   3. **Complexity of TCT:** TCT is a highly technical and intricate theory. Correctly
@@ -560,7 +562,7 @@ Despite the promise, several substantial hurdles must be overcome.
   5. **Group Representability of Enforcing Lattices:** For a TCT-derived cf-IE
      property to be useful in DeMeo's strategy (e.g., 
      [[1 (Conjecture 3.1)](#works-cited)] regarding a property and its negation ),
-     the lattice $L_{\mathrm{enforce}}$​ that enforces it must itself be "group
+     the lattice $L_{\mathrm{enf}}$​ that enforces it must itself be "group
      representable" (isomorphic to an interval in some group's subgroup lattice). 
      Establishing this for potentially complex lattices arising from TCT
      considerations may not be straightforward.
@@ -616,7 +618,7 @@ To realize the potential of this combined strategy, future research should focus
 2.  **Identifying and Proving cf-IE Nature of TCT-Derived Group Properties**. 
     Once a group property $P_{grp}$​ is hypothesized from TCT analysis of $A_G$, it
     must be proven to be cf-IE.  This requires finding a lattice
-    $L_{\mathrm{enforce}}$​ such that $L_{\mathrm{enforce}} ​≅ [K, X]$ ($K$ core-free)
+    $L_{\mathrm{enf}}$​ such that $L_{\mathrm{enf}} ​≅ [K, X]$ ($K$ core-free)
     implies $X ⊨ P_{\mathrm{grp}}$​. This may involve constructing specific lattices
     whose structure inherently forces the desired TCT behavior on any algebra representing
     them, which in turn forces $P_{\mathrm{grp}}$​.
