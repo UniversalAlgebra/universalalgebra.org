@@ -257,7 +257,7 @@ sets of term identities.[[6](#works-cited)] For locally finite varieties:
    **Taylor variety**, i.e., possessing a Taylor term. A Taylor term is an idempotent
    term $t(x_1, ..., x_n)$ such that for each $i ∈ \{1, ..., n\}$, 
   
-   \[t(x, ..., x, y, x, ..., x) = t(x, ..., x, z, x, ..., x)\]
+   \\[t(x, ..., x, y, x, ..., x) = t(x, ..., x, z, x, ..., x)\\]
 
    holds if $y$ and $z$ are in the $i$-th position and all other variables are $x$.[[6](#works-cited)]
 
