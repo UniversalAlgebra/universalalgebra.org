@@ -483,9 +483,10 @@ would be unrepresentable by any group as a core-free interval, falsifying statem
 A subtle but critical distinction must be maintained: a "forcing lattice" versus an
 "enforcing lattice." A specific lattice $L_{\mathrm{target}}$ (e.g., $L_7$ or a parachute lattice)
 might, by its structure, *force* $A_G$ (where $L_{\mathrm{target}} ≅ \mathrm{Con}(A_G)$) to exhibit certain TCT
-characteristics, which in turn imply a group property $P_{\mathrm{grp}}$​ for $G$.  However, for $P_{\mathrm{grp}}$​
-to be a cf-IE property in DeMeo's sense, there must exist some lattice $L_{\mathrm{enf}}$
-(which could be different from Ltarget​) such that *any* group $X$ representing $L_{\mathrm{enf}}$
+characteristics, which in turn imply a group property $P_{\mathrm{grp}}$​ for $G$.
+However, for $P_{\mathrm{grp}}$​ to be a cf-IE property in DeMeo's sense, there must
+exist some lattice $L_{\mathrm{enf}}$ (which could be different from
+$L_{\mathrm{target}}$) such that *any* group $X$ representing $L_{\mathrm{enf}}$
 as a core-free interval $[K, X]$ must possess property $P_{\mathrm{grp}}$​. This two-layered lattice
 argumentation is essential for the logical integrity of applying Theorem 3.6. The
 TCT-derived cf-IE properties are somewhat self-referential in this regard: the
