@@ -481,11 +481,11 @@ would be unrepresentable by any group as a core-free interval, falsifying statem
 (B) of Pálfy-Pudlák.
 
 A subtle but critical distinction must be maintained: a "forcing lattice" versus an
-"enforcing lattice." A specific lattice Ltarget (e.g., $L_7$ or a parachute lattice)
-might, by its structure, *force* $A_G$ (where Ltarget ≅ $\mathrm{Con}(A_G)$) to exhibit certain TCT
+"enforcing lattice." A specific lattice $L_{\mathrm{target}}$ (e.g., $L_7$ or a parachute lattice)
+might, by its structure, *force* $A_G$ (where $L_{\mathrm{target}} ≅ \mathrm{Con}(A_G)$) to exhibit certain TCT
 characteristics, which in turn imply a group property $P_{\mathrm{grp}}$​ for $G$.  However, for $P_{\mathrm{grp}}$​
 to be a cf-IE property in DeMeo's sense, there must exist some lattice $L_{\mathrm{enf}}$
-(which could be different from Ltarget​) such that *any* group X representing $L\_{\mathrm{enf}}$
+(which could be different from Ltarget​) such that *any* group $X$ representing $L_{\mathrm{enf}}$
 as a core-free interval $[K, X]$ must possess property $P_{\mathrm{grp}}$​. This two-layered lattice
 argumentation is essential for the logical integrity of applying Theorem 3.6. The
 TCT-derived cf-IE properties are somewhat self-referential in this regard: the
@@ -493,7 +493,7 @@ TCT-derived cf-IE properties are somewhat self-referential in this regard: the
 lattice whose structure inherently forces specific TCT features on any algebra whose
 congruence lattice it is.
 
-DeMeo's analysis of $L_7$ [[1](#works-cited)] already provides a set of potent cf-IE properties (G is
+DeMeo's analysis of $L_7$ [[1](#works-cited)] already provides a set of potent cf-IE properties ($G$ is
 primitive, insoluble, $C_G(N) = 1$, etc.). If TCT analysis of $L_7$ (or other lattices) can
 yield *new, independent* cf-IE properties of $G$, the intersection of required
 properties shrinks, making a contradiction more attainable.  For instance, $L_7$ is
