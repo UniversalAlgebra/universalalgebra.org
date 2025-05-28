@@ -1139,12 +1139,12 @@ Theorem. This theorem states two equivalent conditions:</p>
 <li>(A) Every finite lattice is isomorphic to the congruence lattice of some finite
    algebra <span class="arithmatex">\(A\)</span> (denoted <span class="arithmatex">\(\mathrm{Con}(A)\)</span>).</li>
 <li>(B) Every finite lattice is isomorphic to an interval in the subgroup lattice of
-   some finite group <span class="arithmatex">\(G\)</span> (denoted <span class="arithmatex">\([H, G]\)</span>, representing the lattice of subgroups of G
+   some finite group <span class="arithmatex">\(G\)</span> (denoted <span class="arithmatex">\([H, G]\)</span>, representing the lattice of subgroups of <span class="arithmatex">\(G\)</span>
    containing <span class="arithmatex">\(H\)</span> and contained in <span class="arithmatex">\(G\)</span>).</li>
 </ul>
-<p>The equivalence (A) ⟺ (B) implies that if one can find a finite lattice L for which
-it can be proven that no finite group G exists such that L ≅ [H, G] for some subgroup
-H of G, then it would follow that statement (A) is false, and the FLRP would have a
+<p>The equivalence (A) ⟺ (B) implies that if one can find a finite lattice <span class="arithmatex">\(L\)</span> for which
+it can be proven that no finite group <span class="arithmatex">\(G\)</span> exists such that <span class="arithmatex">\(L ≅ [H, G]\)</span> for some subgroup
+<span class="arithmatex">\(H\)</span> of <span class="arithmatex">\(G\)</span>, then it would follow that statement (A) is false, and the FLRP would have a
 negative answer. This theorem, therefore, transforms a problem in universal algebra
 and lattice theory into a problem concerning the structure of subgroup lattices of
 finite groups, providing the primary motivation for the approach detailed in
@@ -1152,7 +1152,7 @@ DeMeo.[<a href="#works-cited">1</a>] The strategic importance of this connection
 overstated, as it opens a pathway to addressing the FLRP through group-theoretic
 constructions and arguments.</p>
 <h3 id="12-core-free-interval-enforceable-cf-ie-properties-definitions-and-significance">1.2. Core-Free Interval Enforceable (cf-IE) Properties: Definitions and Significance</h3>
-<p>Building upon the Pálfy-Pudlák theorem, DeMeo [<a href="#works-cited">1</a>] introduces a
+<p>In  [<a href="#works-cited">1</a>], building upon the Pálfy-Pudlák theorem, DeMeo introduces a
 classification of group-theoretic properties based on their relationship to lattice
 intervals. An "interval enforceable (IE)" property <span class="arithmatex">\(P\)</span> is a group property for which
 there exists a finite lattice <span class="arithmatex">\(L\)</span> such that if <span class="arithmatex">\(G\)</span> is a group with <span class="arithmatex">\(L\)</span> isomorphic to an
@@ -1204,8 +1204,8 @@ statement (B) of the Pálfy-Pudlák theorem is false, leading to a negative reso
 of the FLRP.[<a href="#works-cited">1</a>] This transforms the FLRP into a concrete
 group-theoretic problem: the search for a set of mutually incompatible cf-IE
 properties.</p>
-<p>The "parachute lattice" construction, denoted <span class="arithmatex">\(P(L, L_1, ..., L_n)\)</span> and illustrated in
-Figure 4 of [<a href="#works-cited">1</a>], is a key technical device used in proving the
+<p>The "parachute lattice" construction, denoted <span class="arithmatex">\(P(L, L_1, ..., L_n)\)</span> (Figure 4 of
+[<a href="#works-cited">1</a>] and reproduced below), is a key technical device used in proving the
 equivalence (B) ⟹ (C). This construction involves creating a new lattice P from a given
 lattice <span class="arithmatex">\(L\)</span> and a set of lattices <span class="arithmatex">\(L_1\)</span>, ..., <span class="arithmatex">\(L_n\)</span> (where each <span class="arithmatex">\(L_i\)</span> is known to
 enforce a cf-IE property <span class="arithmatex">\(P_i\)</span>). If statement (B) holds, then <span class="arithmatex">\(P\)</span> must be
@@ -1218,6 +1218,7 @@ for how multiple cf-IE constraints could be simultaneously imposed on a single g
 <span class="arithmatex">\(G\)</span>, should the FLRP have a positive answer. The failure to find such a group <span class="arithmatex">\(G\)</span>, under
 increasingly restrictive (yet valid) cf-IE conditions, would provide evidence against
 the FLRP.</p>
+<p><img alt="Parachute construction" height="200" src="../../assets/parachuteHG.png" width="300" /></p>
 <p>Furthermore, Corollary 3.9 of [<a href="#works-cited">1</a>], which follows from the parachute
 construction logic, states that the conjunction of any finite number of cf-IE
 properties is itself a cf-IE property. This reinforces the strategy of accumulating
@@ -1225,9 +1226,12 @@ multiple cf-IE properties with the aim of reaching a contradiction (an empty
 intersection).</p>
 <h3 id="14-illustrative-example-insights-from-the-analysis-of-l_7">1.4. Illustrative Example: Insights from the Analysis of <span class="arithmatex">\(L_7\)</span></h3>
 <p>DeMeo's paper provides a compelling illustration of this strategy through a detailed
-analysis of a specific seven-element lattice, denoted <span class="arithmatex">\(L_7\)</span>. This lattice is notable as
+analysis of a specific seven-element lattice, denoted <span class="arithmatex">\(L_7\)</span>. (Figure 4 of
+[<a href="#works-cited">1</a>] and reproduced below.)
+This lattice is notable as
 it is the smallest for which a congruence lattice representation 
 (<span class="arithmatex">\(L_7 ≅ \mathrm{Con}(A)\)</span> for some finite algebra A) has not yet been found.[<a href="#works-cited">1</a>]</p>
+<p><img alt="L7 lattice" height="200" src="../../assets/l7.png" width="300" /></p>
 <p>Proposition 4.1 of [<a href="#works-cited">1</a>] outlines a set of strong group-theoretic
 properties that any finite group <span class="arithmatex">\(G\)</span> must possess if <span class="arithmatex">\(L_7\)</span> is isomorphic to a core-free
 interval <span class="arithmatex">\([H, G]\)</span> in <span class="arithmatex">\(\mathrm{Sub}(G)\)</span>:</p>
