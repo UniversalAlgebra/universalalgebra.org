@@ -311,7 +311,7 @@ tails, especially for types 1 or 5, is intrinsically linked to failures of congr
 modularity. For instance, if a minimal set of type $i ∈ \{2, 3, 4, 5\}$ has a non-empty
 tail, it forces the existence of a pentagonal sublattice N5 (a hallmark of
 non-modularity) of type $i$ in the congruence lattice of some subalgebra of $A^2$.
-In the other direction, strong conditions on the labeled congruence lattice, such as
+Contrapositively, strong conditions on the labeled congruence lattice, such as
 the absence of pentagons, can force tails to be empty.[[3](#works-cited)]
 
 For a locally finite variety $V$ to be **congruence modular**, two conditions must be
@@ -340,31 +340,31 @@ A primary avenue for defining new enforceable properties through TCT involves th
 of types present in $\mathrm{Con}(A_G)$ (which is isomorphic to the interval 
 $L ≅ [H, G]$ when $H$ is core-free).
 
-+  **Properties Based on Type Omission**. If a lattice $L$, by its structure, forces any
-   algebra $A$ for which $\mathrm{Con}(A) ≅ L$ to omit certain TCT types from its type set (or
-   from the type set of the variety $V(A)$ it generates), this leads to strong
-   algebraic consequences. For instance:
+**Properties Based on Type Omission**. If a lattice $L$, by its structure, forces any
+algebra $A$ for which $\mathrm{Con}(A) ≅ L$ to omit certain TCT types from its type set (or
+from the type set of the variety $V(A)$ it generates), this leads to strong
+algebraic consequences. For instance:
 
-   1.  If $L$ forces $V(A_G)$ to omit **type 1** (unary type), then $A_G$ must
-       possess a Taylor term, and $V(A_G)$ is a Taylor variety.[[6](#works-cited)]
++  If $L$ forces $V(A_G)$ to omit **type 1** (unary type), then $A_G$ must
+    possess a Taylor term, and $V(A_G)$ is a Taylor variety.[[6](#works-cited)]
 
-   2.  If $L$ forces $V(A_G)$ to omit **types {1,5}** (unary and semilattice types), then
-       $A_G$ must satisfy a non-trivial congruence identity and possess a Hobby-McKenzie
-       term.[[6](#works-cited)] The critical step is then to determine if "$G$ is a
-       group such that $A_G$ has a Taylor term (or satisfies a given congruence
-       identity)" can be established as a cf-IE property of $G$, meaning it is
-       enforceable by some (potentially different) lattice $L′$. This translation
-       from an algebraic property of $A_G$ to a cf-IE group property of $G$
-       represents a significant theoretical challenge. 
++  If $L$ forces $V(A_G)$ to omit **types {1,5}** (unary and semilattice types), then
+    $A_G$ must satisfy a non-trivial congruence identity and possess a Hobby-McKenzie
+    term.[[6](#works-cited)] The critical step is then to determine if "$G$ is a
+    group such that $A_G$ has a Taylor term (or satisfies a given congruence
+    identity)" can be established as a cf-IE property of $G$, meaning it is
+    enforceable by some (potentially different) lattice $L′$. This translation
+    from an algebraic property of $A_G$ to a cf-IE group property of $G$
+    represents a significant theoretical challenge. 
 
-+  **Properties Based on Type Presence**. Conversely, if the structure of $L$ forces
-   $\mathrm{Con}(A_G)$ to exhibit certain TCT types, this can also lead to enforceable
-   properties. For example, if $L$ is a non-modular lattice, then $\mathrm{Con}(A_G)$ must be
-   non-modular. In locally finite varieties, non-modular congruence lattices
-   necessitate the presence of TCT types 1 or 5 [[2](#works-cited) (Corollary 5.20)].
-   Thus, if a non-modular lattice $Lₙₘ$ enforces the property "$A_G$ admits type 1 or type 5," then
-   "$G$ is a group such that $A_G$ admits type 1 or 5 when $Lₙₘ ≅ [H, G]$" could be a
-   candidate cf-IE property.
+**Properties Based on Type Presence**. Conversely, if the structure of $L$ forces
+$\mathrm{Con}(A_G)$ to exhibit certain TCT types, this can also lead to enforceable
+properties. For example, if $L$ is a non-modular lattice, then $\mathrm{Con}(A_G)$ must be
+non-modular. In locally finite varieties, non-modular congruence lattices
+necessitate the presence of TCT types 1 or 5 [[2](#works-cited) (Corollary 5.20)].
+Thus, if a non-modular lattice $Lₙₘ$ enforces the property "$A_G$ admits type 1 or type 5," then
+"$G$ is a group such that $A_G$ admits type 1 or 5 when $Lₙₘ ≅ [H, G]$" could be a
+candidate cf-IE property.
 
 The "empty tails" condition is an important qualifier. Properties like "$V(A_G)$ omits
 type 1 AND has empty tails for all its minimal sets" would be stronger and more
@@ -466,7 +466,7 @@ The synergy unfolds as follows:
     abelianness, and tail conditions.
 
 3.  The research objective is to translate these TCT-derived algebraic properties of
-    $A_G$ into group-theoretic properties ($P_{grp}$​) of $G$, and then to prove that
+    $A_G$ into group-theoretic properties ($P_{\mathrm{grp}}$​) of $G$, and then to prove that
     these $P_{\mathrm{grp}}$​ are indeed cf-IE, i.e., enforceable by some lattice.
 
 If a set of such TCT-derived cf-IE group properties, possibly combined with known
@@ -619,7 +619,7 @@ To realize the potential of this combined strategy, future research should focus
        solvable, or having specific types of chief factors)?
 
 2.  **Identifying and Proving cf-IE Nature of TCT-Derived Group Properties**. 
-    Once a group property $P_{grp}$​ is hypothesized from TCT analysis of $A_G$, it
+    Once a group property $P_{\mathrm{grp}}$​ is hypothesized from TCT analysis of $A_G$, it
     must be proven to be cf-IE.  This requires finding a lattice
     $L_{\mathrm{enf}}$​ such that $L_{\mathrm{enf}} ​≅ [K, X]$ ($K$ core-free)
     implies $X ⊨ P_{\mathrm{grp}}$​. This may involve constructing specific lattices
