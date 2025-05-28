@@ -1,6 +1,6 @@
 # The Finite Lattice Representation Problem (FLRP)
 
-The Finite Lattice Representation Problem is a central, long-standing unsolved question in universal algebra. At its heart, it asks something fundamental about the nature of finite mathematical structures:
+The [Finite Lattice Representation Problem][FLRP Wikipedia page] is a central, long-standing unsolved question in universal algebra. At its heart, it asks something fundamental about the nature of finite mathematical structures:
 
 > **Is every finite lattice isomorphic to the congruence lattice of some finite algebra?**
 
@@ -17,3 +17,4 @@ Use the navigation menu to explore the different facets of the FLRP:
 * **Partial Results:** See what parts of the problem *have* been solved.
 
 
+[FLRP Wikipedia page]: https://en.wikipedia.org/w/index.php?title=Finite_lattice_representation_problem&oldid=1282543248

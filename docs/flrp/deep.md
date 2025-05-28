@@ -1,7 +1,8 @@
 # Revisiting Enforceable Properties for the Finite Lattice Representation Problem: A Tame Congruence Theory Perspective
 
-This page was compiled with the help of the Gemini 2.5 Pro AI assistant in "Deep
-Research" mode.
+This page was created in collaboration with the 
+[Gemini 2.5 Pro](https://gemini.google.com/app) 
+AI assistant in "Deep Research" mode.
 
 ## 1. The Finite Lattice Representation Problem: Context and Framework
 
@@ -14,7 +15,7 @@ strategy.
 
 The Finite Lattice Representation Problem (FLRP) stands as a central open question in
 universal algebra, asking for a characterization of those finite lattices that are
-isomorphic to the congruence lattices of finite algebras.[[1](#works-cited)] 
+isomorphic to the congruence lattices of finite algebras.[[20](#works-cited)] 
 The study of congruence lattices, which encode the homomorphic images and internal
 symmetries of algebraic structures, is fundamental to understanding the structure of
 algebras themselves.
@@ -681,3 +682,4 @@ pattern.
 17. Congruence lattices of finite algebras and intervals in subgroup lattices of finite groups. Pálfy, P.P., Pudlák, P. Algebra Universalis 11(1), 22–27 (1980) [doi url](http://dx.doi.org/10.1007/BF02483080).
 18. Expansions of finite algebras and their congruence lattices (2012). William DeMeo; [arxiv 1205.1106](http://arxiv.org/abs/1205.1106).
 19. Congruence lattices of finite algebras. William DeMeo. PhD thesis, University of Hawai’i at Mānoa, Honolulu, HI, May 2012; [arxiv 1204.4305](http://arxiv.org/abs/1204.4305).
+20. [Finite lattice representation problem Wikipedia page](https://en.wikipedia.org/w/index.php?title=Finite_lattice_representation_problem&oldid=1282543248); Wikipedia, The Free Encyclopedia. Date retrieved: 28 May 2025 04:54 UTC.
