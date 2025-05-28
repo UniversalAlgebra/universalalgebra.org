@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://universalalgebra.org/</loc>
-         <lastmod>2025-05-27</lastmod>
+         <lastmod>2025-05-28</lastmod>
     </url>
     <url>
          <loc>https://universalalgebra.org/flrp/</loc>
-         <lastmod>2025-05-27</lastmod>
+         <lastmod>2025-05-28</lastmod>
     </url>
     <url>
          <loc>https://universalalgebra.org/flrp/concepts/</loc>
-         <lastmod>2025-05-27</lastmod>
+         <lastmod>2025-05-28</lastmod>
+    </url>
+    <url>
+         <loc>https://universalalgebra.org/flrp/deep/</loc>
+         <lastmod>2025-05-28</lastmod>
     </url>
     <url>
          <loc>https://universalalgebra.org/flrp/history/</loc>
-         <lastmod>2025-05-27</lastmod>
+         <lastmod>2025-05-28</lastmod>
     </url>
     <url>
          <loc>https://universalalgebra.org/flrp/related/</loc>
-         <lastmod>2025-05-27</lastmod>
+         <lastmod>2025-05-28</lastmod>
     </url>
     <url>
          <loc>https://universalalgebra.org/flrp/research/</loc>
-         <lastmod>2025-05-27</lastmod>
+         <lastmod>2025-05-28</lastmod>
     </url>
     <url>
          <loc>https://universalalgebra.org/flrp/status/</loc>
-         <lastmod>2025-05-27</lastmod>
+         <lastmod>2025-05-28</lastmod>
     </url>
     <url>
          <loc>https://universalalgebra.org/flrp/tct/</loc>
-         <lastmod>2025-05-27</lastmod>
+         <lastmod>2025-05-28</lastmod>
     </url>
 </urlset>

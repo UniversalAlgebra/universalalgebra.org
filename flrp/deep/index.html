@@ -1,0 +1,1901 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Exploring problems and progress in universal algebra, with a focus on the Finite Lattice Representation Problem (FLRP).">
+      
+      
+        <meta name="author" content="William DeMeo">
+      
+      
+        <link rel="canonical" href="https://universalalgebra.org/flrp/deep/">
+      
+      
+        <link rel="prev" href="../research/">
+      
+      
+      
+      <link rel="icon" href="../../assets/l7.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>deep - Universal Algebra .org</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#revisiting-enforceable-properties-for-the-finite-lattice-representation-problem-a-tame-congruence-theory-perspective" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Universal Algebra .org" class="md-header__button md-logo" aria-label="Universal Algebra .org" data-md-component="logo">
+      
+  <img src="../../assets/l7.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Universal Algebra .org
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              deep
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/universalalgebra/universalalgebra.org" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    universalalgebra/universalalgebra.org
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  Finite Lattice Representation Problem
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Universal Algebra .org" class="md-nav__button md-logo" aria-label="Universal Algebra .org" data-md-component="logo">
+      
+  <img src="../../assets/l7.png" alt="logo">
+
+    </a>
+    Universal Algebra .org
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/universalalgebra/universalalgebra.org" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    universalalgebra/universalalgebra.org
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Finite Lattice Representation Problem
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Finite Lattice Representation Problem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Core Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History & Pálfy-Pudlák
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../status/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Current Status & Counterexamples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tct/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tame Congruence Theory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../related/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Partial Results & Related Problems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Current & Future Research
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Current & Future Research
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../research/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    shallow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    deep
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    deep
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-the-finite-lattice-representation-problem-context-and-demeos-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. The Finite Lattice Representation Problem: Context and DeMeo's Framework
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. The Finite Lattice Representation Problem: Context and DeMeo&#39;s Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-brief-recapitulation-of-the-flrp-and-the-palfy-pudlak-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1. Brief Recapitulation of the FLRP and the Pálfy-Pudlák Theorem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-core-free-interval-enforceable-cf-ie-properties-definitions-and-significance" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2. Core-Free Interval Enforceable (cf-IE) Properties: Definitions and Significance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-strategic-importance-of-thm-36-and-the-parachute-construction-for-flrp" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3. Strategic Importance of Thm 3.6 and the Parachute Construction for FLRP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-illustrative-example-insights-from-the-analysis-of-l_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4. Illustrative Example: Insights from the Analysis of \(L_7\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-tame-congruence-theory-a-structural-lens-for-finite-algebras" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Tame Congruence Theory: A Structural Lens for Finite Algebras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Tame Congruence Theory: A Structural Lens for Finite Algebras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-fundamental-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Fundamental Concepts.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-connecting-local-structure-to-global-properties-tct-types-maltsev-conditions-congruence-identities-solvability-and-abelianness" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Connecting Local Structure to Global Properties: TCT Types, Malt'sev Conditions, Congruence Identities, Solvability, and Abelianness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-the-notion-of-tameness-and-the-significance-of-empty-tails-in-minimal-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. The Notion of "Tameness" and the Significance of "Empty Tails" in Minimal Sets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-defining-enforceable-properties-via-tame-congruence-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Defining Enforceable Properties via Tame Congruence Theory
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Defining Enforceable Properties via Tame Congruence Theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-leveraging-tct-types-proposing-cf-ie-properties-based-on-the-presence-or-omission-of-specific-tct-types-or-type-configurations-in-mathrmcona_g" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. Leveraging TCT Types: Proposing cf-IE properties based on the presence or omission of specific TCT types or type configurations in \(\mathrm{Con}(A_G)\).
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-exploiting-geometric-constraints-in-labeled-congruence-lattices" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. Exploiting Geometric Constraints in Labeled Congruence Lattices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-the-role-of-solvableabelian-congruence-quotients-and-their-tct-type-correlates" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3. The Role of Solvable/Abelian Congruence Quotients and their TCT Type Correlates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-assessing-the-combined-strategy-synergies-potential-and-challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Assessing the Combined Strategy: Synergies, Potential, and Challenges
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Assessing the Combined Strategy: Synergies, Potential, and Challenges">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-potential-for-progress-the-path-to-contradiction" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1. Potential for Progress: The Path to Contradiction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-methodological-strengths" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2. Methodological Strengths
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-anticipated-hurdles-and-challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3. Anticipated Hurdles and Challenges
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-concluding-analysis-and-strategic-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Concluding Analysis and Strategic Recommendations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Concluding Analysis and Strategic Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-overall-assessment-of-the-combined-strategys-promise" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1. Overall Assessment of the Combined Strategy's Promise
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-recommendations-for-specific-research-directions" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2. Recommendations for Specific Research Directions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#works-cited" class="md-nav__link">
+    <span class="md-ellipsis">
+      Works cited
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-the-finite-lattice-representation-problem-context-and-demeos-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. The Finite Lattice Representation Problem: Context and DeMeo's Framework
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. The Finite Lattice Representation Problem: Context and DeMeo&#39;s Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-brief-recapitulation-of-the-flrp-and-the-palfy-pudlak-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1. Brief Recapitulation of the FLRP and the Pálfy-Pudlák Theorem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-core-free-interval-enforceable-cf-ie-properties-definitions-and-significance" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2. Core-Free Interval Enforceable (cf-IE) Properties: Definitions and Significance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-strategic-importance-of-thm-36-and-the-parachute-construction-for-flrp" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3. Strategic Importance of Thm 3.6 and the Parachute Construction for FLRP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-illustrative-example-insights-from-the-analysis-of-l_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4. Illustrative Example: Insights from the Analysis of \(L_7\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-tame-congruence-theory-a-structural-lens-for-finite-algebras" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Tame Congruence Theory: A Structural Lens for Finite Algebras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Tame Congruence Theory: A Structural Lens for Finite Algebras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-fundamental-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Fundamental Concepts.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-connecting-local-structure-to-global-properties-tct-types-maltsev-conditions-congruence-identities-solvability-and-abelianness" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Connecting Local Structure to Global Properties: TCT Types, Malt'sev Conditions, Congruence Identities, Solvability, and Abelianness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-the-notion-of-tameness-and-the-significance-of-empty-tails-in-minimal-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. The Notion of "Tameness" and the Significance of "Empty Tails" in Minimal Sets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-defining-enforceable-properties-via-tame-congruence-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Defining Enforceable Properties via Tame Congruence Theory
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Defining Enforceable Properties via Tame Congruence Theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-leveraging-tct-types-proposing-cf-ie-properties-based-on-the-presence-or-omission-of-specific-tct-types-or-type-configurations-in-mathrmcona_g" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. Leveraging TCT Types: Proposing cf-IE properties based on the presence or omission of specific TCT types or type configurations in \(\mathrm{Con}(A_G)\).
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-exploiting-geometric-constraints-in-labeled-congruence-lattices" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. Exploiting Geometric Constraints in Labeled Congruence Lattices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-the-role-of-solvableabelian-congruence-quotients-and-their-tct-type-correlates" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3. The Role of Solvable/Abelian Congruence Quotients and their TCT Type Correlates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-assessing-the-combined-strategy-synergies-potential-and-challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Assessing the Combined Strategy: Synergies, Potential, and Challenges
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Assessing the Combined Strategy: Synergies, Potential, and Challenges">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-potential-for-progress-the-path-to-contradiction" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1. Potential for Progress: The Path to Contradiction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-methodological-strengths" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2. Methodological Strengths
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-anticipated-hurdles-and-challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3. Anticipated Hurdles and Challenges
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-concluding-analysis-and-strategic-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Concluding Analysis and Strategic Recommendations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Concluding Analysis and Strategic Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-overall-assessment-of-the-combined-strategys-promise" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1. Overall Assessment of the Combined Strategy's Promise
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-recommendations-for-specific-research-directions" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2. Recommendations for Specific Research Directions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#works-cited" class="md-nav__link">
+    <span class="md-ellipsis">
+      Works cited
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="revisiting-enforceable-properties-for-the-finite-lattice-representation-problem-a-tame-congruence-theory-perspective">Revisiting Enforceable Properties for the Finite Lattice Representation Problem: A Tame Congruence Theory Perspective</h1>
+<h2 id="1-the-finite-lattice-representation-problem-context-and-demeos-framework">1. The Finite Lattice Representation Problem: Context and DeMeo's Framework</h2>
+<p>This section establishes the foundational context of the Finite Lattice
+Representation Problem (FLRP) and meticulously dissects DeMeo's contributions <a href="#works-cited">1</a>,
+highlighting the mechanisms relevant to the proposed combined strategy.</p>
+<h3 id="11-brief-recapitulation-of-the-flrp-and-the-palfy-pudlak-theorem">1.1. Brief Recapitulation of the FLRP and the Pálfy-Pudlák Theorem</h3>
+<p>The Finite Lattice Representation Problem (FLRP) stands as a central open question in
+universal algebra, asking for a characterization of those finite lattices that are
+isomorphic to the congruence lattices of finite algebras.<a href="#works-cited">1</a> The study of congruence
+lattices, which encode the homomorphic images and internal symmetries of algebraic
+structures, is fundamental to understanding the structure of algebras themselves.</p>
+<p>A pivotal result connecting this problem to group theory is the Pálfy-Pudlák
+Theorem. This theorem states two equivalent conditions:</p>
+<ul>
+<li>(A) Every finite lattice is isomorphic to the congruence lattice of some finite
+   algebra A (denoted Con(A)).</li>
+<li>(B) Every finite lattice is isomorphic to an interval in the subgroup lattice of
+   some finite group G (denoted [H, G], representing the lattice of subgroups of G
+   containing H and contained in G).</li>
+</ul>
+<p>The equivalence (A) ⟺ (B) implies that if one can find a finite lattice L for which
+it can be proven that no finite group G exists such that L ≅ [H, G] for some subgroup
+H of G, then it would follow that statement (A) is false, and the FLRP would have a
+negative answer. This theorem, therefore, transforms a problem in universal algebra
+and lattice theory into a problem concerning the structure of subgroup lattices of
+finite groups, providing the primary motivation for the approach detailed in
+DeMeo.<a href="#works-cited">1</a> The strategic importance of this connection cannot be
+overstated, as it opens a pathway to addressing the FLRP through group-theoretic
+constructions and arguments.</p>
+<h3 id="12-core-free-interval-enforceable-cf-ie-properties-definitions-and-significance">1.2. Core-Free Interval Enforceable (cf-IE) Properties: Definitions and Significance</h3>
+<p>Building upon the Pálfy-Pudlák theorem, DeMeo <a href="#works-cited">1</a> introduces a
+classification of group-theoretic properties based on their relationship to lattice
+intervals. An "interval enforceable (IE)" property P is a group property for which
+there exists a finite lattice L such that if G is a group with L isomorphic to an
+interval [H, G] in its subgroup lattice Sub(G), then G must possess property P.</p>
+<p>A more refined and crucial concept for the FLRP is that of "core-free interval
+enforceable (cf-IE)" properties.  A property <span class="arithmatex">\(P\)</span> is cf-IE if there exists a finite
+lattice <span class="arithmatex">\(L\)</span> such that if <span class="arithmatex">\(G\)</span> is a group with <span class="arithmatex">\(L ≅ [H, G]\)</span> and <span class="arithmatex">\(H\)</span> is a core-free
+subgroup of <span class="arithmatex">\(G\)</span> (i.e., <span class="arithmatex">\(\mathrm{core}_G(H) = 1\)</span>, meaning <span class="arithmatex">\(H\)</span> contains no non-trivial
+normal subgroup of <span class="arithmatex">\(G\)</span>), then <span class="arithmatex">\(G\)</span> must possess property <span class="arithmatex">\(P\)</span>.<a href="#works-cited">1</a></p>
+<p>The core-free condition, <span class="arithmatex">\(\mathrm{core}_G(H) = 1\)</span>, is of paramount significance. 
+When <span class="arithmatex">\(H\)</span> is core-free in <span class="arithmatex">\(G\)</span>, the group <span class="arithmatex">\(G\)</span> admits a faithful permutation
+representation <span class="arithmatex">\(ϕ\)</span> on the set of right cosets <span class="arithmatex">\(G/H\)</span>. It is a well-established result
+that the congruence lattice of the algebra <span class="arithmatex">\(⟨G/H, ϕ(G)⟩\)</span> (formed by the <span class="arithmatex">\(G\)</span>-set <span class="arithmatex">\(G/H\)</span>
+with the action of <span class="arithmatex">\(G\)</span>) is isomorphic to the interval <span class="arithmatex">\([H, G]\)</span> in <span class="arithmatex">\(\mathrm{Sub}(G)\)</span>. </p>
+<p>This isomorphism is the critical link: it means that a core-free interval [H, G]
+<em>is</em> the congruence lattice of a specific finite algebra derived directly from the
+group G and subgroup H. Consequently, cf-IE properties are group properties that are
+forced upon G when a particular lattice L appears as the congruence lattice of such a
+G-set. This directly connects the study of subgroup intervals under the core-free
+condition to statement (A) of the Pálfy-Pudlák theorem, making cf-IE properties
+particularly potent tools for investigating the FLRP. Without the core-free
+assumption, the interval [H, G] might not directly correspond to a congruence lattice
+of an algebra naturally derived from G in a way that is immediately relevant to the
+FLRP as formulated by Pálfy and Pudlák.</p>
+<p>DeMeo <a href="#works-cited">1</a> provides several examples of cf-IE properties. Insolubility
+is shown to be IE (and therefore cf-IE), while solubility is demonstrated to be not
+even cf-IE.  Other identified cf-IE classes of groups include those that
+are not alternating or symmetric groups, subdirectly irreducible groups, groups
+possessing no non-trivial abelian normal subgroups, and groups G for which the
+centralizer <span class="arithmatex">\(C_G(M)\)</span> is trivial for every non-trivial normal subgroup M of
+G. These examples underscore that cf-IE properties can be substantial and
+non-trivial, offering a way to impose strong structural constraints on groups based
+on the lattice-theoretic structure of their subgroup intervals.</p>
+<h3 id="13-strategic-importance-of-thm-36-and-the-parachute-construction-for-flrp">1.3. Strategic Importance of Thm 3.6 and the Parachute Construction for FLRP</h3>
+<p>A cornerstone of DeMeo's proposed strategy for the FLRP is Theorem 3.6 of
+<a href="#works-cited">1</a>. This theorem establishes further equivalences to statement (B)
+of the Pálfy-Pudlák theorem (and thus to a positive answer to the FLRP). Among these,
+statement (C) is particularly relevant:</p>
+<ul>
+<li>(C) For every finite lattice <span class="arithmatex">\(L\)</span>, for every finite collection <span class="arithmatex">\(X_1\)</span>, ..., <span class="arithmatex">\(X_n\)</span> of
+   cf-IE classes of groups, there exists a finite group <span class="arithmatex">\(G ∈ ⋂ \{X_i : 1 ≤ i ≤ n\}\)</span>
+   such that <span class="arithmatex">\(L ≅ [H, G]\)</span> for some subgroup <span class="arithmatex">\(H\)</span> that is core-free in <span class="arithmatex">\(G\)</span>.</li>
+</ul>
+<p>The strategic implication of Theorem 3.6 (C) is profound: if one could identify a
+finite collection of cf-IE classes of groups, <span class="arithmatex">\(X_1\)</span>, ..., <span class="arithmatex">\(X_n\)</span>, whose intersection is
+empty (i.e., no finite group can simultaneously possess all these properties), then
+statement (C) would be false for any choice of <span class="arithmatex">\(L\)</span>. This, in turn, would imply that
+statement (B) of the Pálfy-Pudlák theorem is false, leading to a negative resolution
+of the FLRP.<a href="#works-cited">1</a> This transforms the FLRP into a concrete
+group-theoretic problem: the search for a set of mutually incompatible cf-IE
+properties.</p>
+<p>The "parachute lattice" construction, denoted <span class="arithmatex">\(P(L, L_1, ..., L_n)\)</span> and illustrated in
+Figure 4 of <a href="#works-cited">1</a>, is a key technical device used in proving the
+equivalence (B) ⟹ (C). This construction involves creating a new lattice P from a given
+lattice <span class="arithmatex">\(L\)</span> and a set of lattices <span class="arithmatex">\(L_1\)</span>, ..., <span class="arithmatex">\(L_n\)</span> (where each <span class="arithmatex">\(L_i\)</span> is known to
+enforce a cf-IE property <span class="arithmatex">\(P_i\)</span>). If statement (B) holds, then <span class="arithmatex">\(P\)</span> must be
+representable as a core-free interval <span class="arithmatex">\([H, G]\)</span> for some group <span class="arithmatex">\(G\)</span>.  The structure of
+the parachute lattice then ensures that the sub-intervals within <span class="arithmatex">\([H, G]\)</span>
+corresponding to <span class="arithmatex">\(L_i\)</span> are also core-free intervals
+isomorphic to <span class="arithmatex">\(L_i\)</span>. Consequently, G must possess each property <span class="arithmatex">\(P_i\)</span>, placing <span class="arithmatex">\(G\)</span> in the
+intersection <span class="arithmatex">\(⋂ P_i\)</span>. The parachute lattice, therefore, serves as a conceptual blueprint
+for how multiple cf-IE constraints could be simultaneously imposed on a single group
+G, should the FLRP have a positive answer. The failure to find such a group <span class="arithmatex">\(G\)</span>, under
+increasingly restrictive (yet valid) cf-IE conditions, would provide evidence against
+the FLRP.</p>
+<p>Furthermore, Corollary 3.9 of <a href="#works-cited">1</a>, which follows from the parachute
+construction logic, states that the conjunction of any finite number of cf-IE
+properties is itself a cf-IE property. This reinforces the strategy of accumulating
+multiple cf-IE properties with the aim of reaching a contradiction (an empty
+intersection).</p>
+<h3 id="14-illustrative-example-insights-from-the-analysis-of-l_7">1.4. Illustrative Example: Insights from the Analysis of <span class="arithmatex">\(L_7\)</span></h3>
+<p>DeMeo's paper provides a compelling illustration of this strategy through a detailed
+analysis of a specific seven-element lattice, denoted <span class="arithmatex">\(L_7\)</span>. This lattice is notable as
+it is the smallest for which a congruence lattice representation 
+(<span class="arithmatex">\(L_7 ≅ \mathrm{Con}(A)\)</span> for some finite algebra A) has not yet been found.<a href="#works-cited">1</a></p>
+<p>Proposition 4.1 of <a href="#works-cited">1</a> outlines a set of strong group-theoretic
+properties that any finite group G must possess if <span class="arithmatex">\(L_7\)</span> is isomorphic to a core-free
+interval [H, G] in Sub(G):</p>
+<ol>
+<li>G must be a primitive permutation group (derived from the core-freeness of a
+maximal subgroup K corresponding to an element in <span class="arithmatex">\(L_7\)</span>).</li>
+<li>For any non-trivial normal subgroup <span class="arithmatex">\(N\)</span> of <span class="arithmatex">\(G\)</span>, its centralizer <span class="arithmatex">\(C_G(N)\)</span> must be trivial.</li>
+<li>G can contain no non-trivial abelian normal subgroups (a direct consequence of the
+trivial centralizer property).</li>
+<li>G must be insoluble (also a consequence of the trivial centralizer property for
+   minimal normal subgroups).</li>
+<li>G must be subdirectly irreducible (possessing a unique minimal normal subgroup).</li>
+<li>With the possible exception of at most one maximal subgroup in the interval [H,
+   G], all proper subgroups within this interval must be core-free in G.</li>
+</ol>
+<p>This analysis of <span class="arithmatex">\(L_7\)</span> serves as a powerful proof-of-concept for DeMeo's general
+strategy. It demonstrates that even a relatively small and specific lattice structure
+can impose a formidable list of cf-IE properties on any group G that might represent
+it as a core-free interval. These derived properties significantly narrow the class
+of potential candidate groups G. The internal structure of the lattice <span class="arithmatex">\(L_7\)</span>
+itself---its specific configuration of meets, joins, and elements like the
+non-modular element K <a href="#works-cited">1</a>---is what drives the deduction of these group properties,
+often in conjunction with group-theoretic tools like Dedekind's rule and Lemma 3.5
+(concerning permuting subgroups).<a href="#works-cited">1</a> This highlights that a deep understanding of how
+lattice-theoretic features translate into cf-IE properties is essential. The
+techniques employed in the <span class="arithmatex">\(L_7\)</span> analysis may prove adaptable when considering new
+enforceable properties derived from Tame Congruence Theory.</p>
+<h2 id="2-tame-congruence-theory-a-structural-lens-for-finite-algebras">2. Tame Congruence Theory: A Structural Lens for Finite Algebras</h2>
+<p>Tame Congruence Theory (TCT), primarily developed by David Hobby and Ralph McKenzie
+2, offers a sophisticated framework for analyzing the structure of finite algebras by
+examining the local behavior of their congruence lattices. This theory provides the
+conceptual tools for potentially defining new and powerful enforceable properties
+relevant to the FLRP.</p>
+<h3 id="21-fundamental-concepts">2.1. Fundamental Concepts.</h3>
+<p>The fundamental concepts of TCT are the following:</p>
+<ul>
+<li>minimal algebras;</li>
+<li>the five TCT types;</li>
+<li>(α, β)-minimal sets (traces, body, tail);</li>
+<li>labeled congruence lattices.</li>
+</ul>
+<p>At the heart of TCT is the analysis of prime quotients α ≺ β (meaning α is covered by
+β) in the congruence lattice Con(A) of a finite algebra A. The local behavior of the
+algebra in the "vicinity" of such a quotient is captured by <em>(α, β)-minimal sets</em>.</p>
+<p>An <strong>(α, β)-minimal set</strong> U is the range of an idempotent unary polynomial e of A,
+minimal with respect to the property that the restrictions α∣U​ and β∣U​ are different.3</p>
+<p>Within an (α, β)-minimal set U, certain β∣U​-classes, known as <strong>traces</strong>, are
+particularly important; these are the β∣U​-classes that are not contained in a single
+α∣U​-class. The union of all traces in U forms the <strong>body</strong> B of U. The remaining
+part, T=U∖B, is called the <strong>tail</strong>.3 TCT provides a rich structural understanding of
+the body, while the tail is considered less structured or "wild" from the theory's
+perspective.3</p>
+<p>A key discovery of TCT is that the algebra A∣N​ (the operations of A restricted to N,
+where N is a trace), when factored by the restricted congruence α∣N​, is polynomially
+equivalent to one of precisely five types of <em>minimal algebras</em>.2</p>
+<p>A <strong>minimal algebra</strong> M is a finite algebra with at least two elements in which every
+non-constant unary polynomial is a permutation of its domain.5</p>
+<p>The five TCT types (of minimal algebras) are the following:</p>
+<ol>
+<li><em>Type 1 (Unary)</em>: pol-equiv to a G-set.</li>
+<li><em>Type 2 (Affine)</em>: pol-equiv to a vector space over a finite field.</li>
+<li><em>Type 3 (Boolean)</em>: pol-equiv to the two-element Boolean algebra.</li>
+<li><em>Type 4 (Lattice)</em>: pol-equiv to the two-element lattice.</li>
+<li><em>Type 5 (Semilattice)</em>: pol-equiv to the two-element semilattice.</li>
+</ol>
+<p>This classification allows each prime quotient α ≺ β in Con(A) to be assigned one of
+these five types, transforming Con(A) into a <strong>labeled congruence lattice</strong>.2 This
+labeling provides a "local flavor" for the algebra at each prime quotient.</p>
+<p>The connection to DeMeo's framework arises when considering the algebra <span class="arithmatex">\(A_G\)</span> = ⟨G/H,
+ϕ(G)⟩, whose congruence lattice is isomorphic to the interval [H, G] when H is
+core-free.<a href="#works-cited">1</a> Thus, a TCT analysis of a lattice L, when L ≅ [H, G], is
+effectively a TCT analysis of <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>. The TCT types observed in L 
+(as <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>) become fundamental characteristics. The challenge and
+opportunity lie in translating these type-dependent properties of <span class="arithmatex">\(A_G\)</span> back into
+group-theoretic properties of G that can be classified as cf-IE.</p>
+<p>Table 1: Summary of the Five TCT Types of Minimal Algebras</p>
+<p>This table summarizes the five types of minimal algebras central to TCT, their
+characterizing algebraic structures, and the nature of their polynomial clones when
+induced on a trace N for a prime quotient typ(α, β).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Characterizing Algebraic Structure</th>
+<th style="text-align: left;">Nature of Polynomial Clone on Trace N (A∣N​/α∣N​)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Unary</td>
+<td style="text-align: left;">Permutation group on a set</td>
+<td style="text-align: left;">All operations are essentially unary (permutations or constants), or can be simulated by such.</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Affine</td>
+<td style="text-align: left;">Vector space over a finite field</td>
+<td style="text-align: left;">All operations are affine transformations (linear combinations + translations).</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Boolean</td>
+<td style="text-align: left;">Two-element Boolean algebra</td>
+<td style="text-align: left;">All operations are those of a Boolean algebra (e.g., join, meet, complement).</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Lattice</td>
+<td style="text-align: left;">Two-element lattice</td>
+<td style="text-align: left;">All operations are those of a lattice (e.g., join, meet).</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Semilattice</td>
+<td style="text-align: left;">Two-element semilattice</td>
+<td style="text-align: left;">All operations are those of a semilattice (e.g., join or meet).</td>
+</tr>
+</tbody>
+</table>
+<p>Table 1 provides a concise reference for the fundamental TCT classification,
+highlighting the core algebraic structure and polynomial characteristics associated
+with each local type. This is crucial for understanding how TCT might define
+enforceable properties for <span class="arithmatex">\(A_G\)</span>, which could then translate to properties of G. This
+information is synthesized from multiple sources.2</p>
+<h3 id="22-connecting-local-structure-to-global-properties-tct-types-maltsev-conditions-congruence-identities-solvability-and-abelianness">2.2. Connecting Local Structure to Global Properties: TCT Types, Malt'sev Conditions, Congruence Identities, Solvability, and Abelianness</h3>
+<p>TCT reveals deep connections between the local types present in Con(A) and global
+properties of the algebra A and the variety V(A) it generates. A variety is a class
+of algebras closed under homomorphic images, subalgebras, and direct products.
+(Alternatively, and equivalently, according to Birkhoff's HSP Theorem, a variety is
+an <em>equational class</em> of algebras.)</p>
+<p><strong>Omitting Types and Malt'sev Conditions</strong>. A particularly powerful aspect of TCT is
+the characterization of varieties that omit certain sets of types. Such omissions are
+often equivalent to the variety satisfying specific Malt'sev conditions, which are
+sets of term identities.6 For locally finite varieties:</p>
+<ul>
+<li>Omitting <strong>type 1</strong> (unary type) is equivalent to the variety being a 
+   <strong>Taylor variety</strong>, i.e., possessing a Taylor term. A Taylor term is an idempotent
+   term t(x1​, ..., xn​) such that for each i ∈ {1, ..., n}, </li>
+</ul>
+<p>t(x, ..., x, y, x, ..., x) = t(x, ..., x, z, x, ..., x)</p>
+<p>holds if y and z are in the i-th position and all other variables are x.6</p>
+<ul>
+<li>Omitting <strong>types {1, 5}</strong> (unary and semilattice types) is equivalent to the
+   variety satisfying a <strong>non-trivial congruence identity</strong> and possessing a
+   Hobby-McKenzie term.6</li>
+<li>Omitting <strong>types {1, 2}</strong> (unary and affine types) is equivalent to the variety
+   being <strong>congruence meet-semidistributive</strong> (SD(∧)).6</li>
+<li>Omitting <strong>types {1, 2, 5}</strong> (unary, affine, and semilattice types) is equivalent
+   to the variety being <strong>congruence join-semidistributive</strong> (SD(∨)).6</li>
+<li>A variety is <strong>congruence modular</strong> if and only if its type set is contained in
+   {2, 3, 4} and all its minimal sets have empty tails.3</li>
+<li>A variety is <strong>congruence distributive</strong> if and only if its type set is contained
+   in {3, 4} and all its minimal sets have empty tails.10</li>
+</ul>
+<p>These equivalences provide a pathway: if the structure of a lattice L (as <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>) forces the omission or presence of certain TCT types in <span class="arithmatex">\(A_G\)</span>, then <span class="arithmatex">\(A_G\)</span> (or <span class="arithmatex">\(V(A_G)\)</span>) must satisfy corresponding strong algebraic conditions. The primary challenge, then, is to translate these algebraic properties of <span class="arithmatex">\(A_G\)</span> (e.g., "possesses a Taylor term") into meaningful group-theoretic properties of G that can be shown to be cf-IE.</p>
+<p><strong>Solvability and Abelianness:</strong> Commutator theory for congruences defines notions of
+solvable and abelian congruences. A prime quotient α ≺ β is <strong>abelian</strong> if the
+commutator [β, β] is less than or equal to α. An interval I[δ, θ] is <strong>solvable</strong> if
+it has a finite chain of congruences δ = γ0 ≺ γ1 ≺ ⋯ ≺ γk = θ such that each factor
+I[γi, γi+1] is abelian.12</p>
+<ul>
+<li>Prime quotients of <strong>type 2</strong> (affine) are always abelian.2  </li>
+<li>Prime quotients of <strong>type 1</strong> (unary) can be either abelian or non-abelian.2  </li>
+<li>If an interval I[δ, θ] is solvable, then all its prime factors must be of type 1
+   or type 2 [2 (Theorem 7.12)].  This connection is significant because if a lattice
+   L, when represented as <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>, forces certain intervals to be solvable or certain
+   quotients to be abelian (or non-abelian), this imposes strict TCT type constraints
+   on <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>.</li>
+</ul>
+<h3 id="23-the-notion-of-tameness-and-the-significance-of-empty-tails-in-minimal-sets">2.3. The Notion of "Tameness" and the Significance of "Empty Tails" in Minimal Sets</h3>
+<p>The term "tame" in TCT broadly refers to the well-behaved, structured nature of local
+polynomial operations, particularly on the <strong>body</strong> of an (α, β)-minimal set U. TCT
+provides extensive information about the structure induced on the body B. In
+contrast, the <strong>tail</strong> T = U - B is often described as "wild," meaning TCT offers
+very little structural insight into it.3</p>
+<p>The condition that minimal sets have <strong>empty tails</strong> (T = ∅, so U = B) is highly
+significant. When tails are empty, the local structure is fully "tame," and the
+analytical power of TCT can be most effectively applied.3 The presence of non-empty
+tails, especially for types 1 or 5, is intrinsically linked to failures of congruence
+modularity. For instance, if a minimal set of type i ∈ {2, 3, 4, 5} has a non-empty
+tail, it forces the existence of a pentagonal sublattice N5 (a hallmark of
+non-modularity) of type i in the congruence lattice of some subalgebra of A2.3
+Conversely, strong conditions on the labeled congruence lattice, such as the absence
+of such pentagons, can force tails to be empty.3  </p>
+<p>For a locally finite variety V to be <strong>congruence modular</strong>, two conditions must be
+met: its type set must be restricted to {2,3,4} (i.e., types 1 and 5 must be
+omitted), AND all minimal sets associated with these types must have empty tails.3
+The "empty tails" condition is thus a critical component of "tameness" in the context
+of well-behaved varieties like congruence modular ones. If a lattice L, interpreted
+as <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>, were to force <span class="arithmatex">\(A_G\)</span> to have minimal sets with non-empty tails of type 1 or
+5, this would indicate a certain "wildness" in <span class="arithmatex">\(A_G\)</span> and imply that <span class="arithmatex">\(V(A_G)\)</span> is not
+congruence modular. Such "wildness," if translatable into a group-theoretic property,
+could be a candidate for a cf-IE property. The challenge remains in formalizing
+"wildness" (e.g., non-empty tails of specific types) as an algebraic property of <span class="arithmatex">\(A_G\)</span>
+that subsequently translates into a cf-IE group property of G.</p>
+<h2 id="3-defining-enforceable-properties-via-tame-congruence-theory">3. Defining Enforceable Properties via Tame Congruence Theory</h2>
+<p>This section explores concrete ways TCT concepts can be harnessed to define new cf-IE
+group properties, focusing on the crucial step of translating properties of <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>
+or the algebra <span class="arithmatex">\(A_G\)</span> itself into properties of the group G.</p>
+<h3 id="31-leveraging-tct-types-proposing-cf-ie-properties-based-on-the-presence-or-omission-of-specific-tct-types-or-type-configurations-in-mathrmcona_g">3.1. Leveraging TCT Types: Proposing cf-IE properties based on the presence or omission of specific TCT types or type configurations in <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>.</h3>
+<p>A primary avenue for defining new enforceable properties through TCT involves the set
+of types present in <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> (which is isomorphic to the interval L ≅ [H, G] when H is core-free).</p>
+<ul>
+<li><strong>Properties Based on Type Omission</strong>. If a lattice L, by its structure, forces any
+   algebra A for which Con(A) ≅ L to omit certain TCT types from its type set (or
+   from the type set of the variety V(A) it generates), this leads to strong
+   algebraic consequences. For instance:</li>
+<li>If L forces <span class="arithmatex">\(V(A_G)\)</span> to omit <strong>type 1</strong> (unary type), then <span class="arithmatex">\(A_G\)</span> must possess a Taylor term, and <span class="arithmatex">\(V(A_G)\)</span> is a Taylor variety.6</li>
+<li>If L forces <span class="arithmatex">\(V(A_G)\)</span> to omit <strong>types {1,5}</strong> (unary and semilattice types), then
+       <span class="arithmatex">\(A_G\)</span> must satisfy a non-trivial congruence identity and possess a Hobby-McKenzie
+       term.6 The critical step is then to determine if "G is a group such that <span class="arithmatex">\(A_G\)</span>
+       has a Taylor term (or satisfies a given congruence identity)" can be
+       established as a cf-IE property of G, meaning it is enforceable by some
+       (potentially different) lattice L′. This translation from an algebraic
+       property of <span class="arithmatex">\(A_G\)</span> to a cf-IE group property of G represents a significant
+       theoretical challenge. </li>
+<li><strong>Properties Based on Type Presence</strong>. Conversely, if the structure of L forces
+   <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> to exhibit certain TCT types, this can also lead to enforceable
+   properties. For example, if L is a non-modular lattice, then <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> must be
+   non-modular. In locally finite varieties, non-modular congruence lattices
+   necessitate the presence of TCT types 1 or 5 [2 (Corollary 5.20)]. Thus, if a
+   non-modular lattice LNM​ enforces the property "<span class="arithmatex">\(A_G\)</span> admits type 1 or type 5," then
+   "G is a group such that <span class="arithmatex">\(A_G\)</span> admits type 1 or 5 when LNM ≅ [H, G]" could be a
+   candidate cf-IE property.</li>
+</ul>
+<p>The "empty tails" condition is an important qualifier. Properties like "<span class="arithmatex">\(V(A_G)\)</span> omits
+type 1 AND has empty tails for all its minimal sets" would be stronger and more
+directly related to conditions like congruence modularity.3 The translation
+bottleneck remains: how does an algebraic property of <span class="arithmatex">\(A_G\)</span> (like "<span class="arithmatex">\(V(A_G)\)</span> is congruence
+modular") translate to a cf-IE group property of G?</p>
+<h3 id="32-exploiting-geometric-constraints-in-labeled-congruence-lattices">3.2. Exploiting Geometric Constraints in Labeled Congruence Lattices</h3>
+<p>The geometric configuration of prime quotients within Con(A) ≅ L imposes constraints on their TCT type labels.</p>
+<ul>
+<li><strong>Perspectivity and Projectivity</strong>. Two prime quotients I1​=I[α, β] and I2​=I[γ, δ]
+   in Con(A) are <strong>perspective</strong> if they are opposite sides of a diamond (M3
+   configuration, e.g., α=γ∧δ and β=γ∨δ) or a pentagon (N5 configuration).
+   <strong>Projectivity</strong> is a sequence of perspectivities. A fundamental result in TCT
+   (often detailed in Chapter 6 of Hobby &amp; McKenzie, e.g., Lemmas 6.2--6.6) is that
+   if two prime quotients are projective, they must have the same TCT type, provided
+   certain conditions hold (e.g., the projectivity avoids type 1 quotients or the
+   lattice is modular).2 This "type consistency under projectivity" is a powerful
+   constraint.</li>
+<li><strong>N5 (Pentagon) Subconfigurations</strong>. If L≅<span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> contains an N5 sublattice, then
+   <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> is non-modular. This forces <span class="arithmatex">\(V(A_G)\)</span> to admit TCT types 1 or 5. The prime
+   quotients forming the N5 configuration will be labeled accordingly, with at least
+   one of them (often the critical quotient) being of type 1 or 5 [2 (Corollary
+   5.20); 15].</li>
+<li><strong>M3 (Diamond) Subconfigurations</strong>. If L≅<span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> contains an M3 sublattice, then
+   <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> is non-distributive. If <span class="arithmatex">\(V(A_G)\)</span> were congruence distributive, it would omit
+   types 1, 2, and 5. Therefore, the presence of an M3 implies that <span class="arithmatex">\(V(A_G)\)</span> is not
+   congruence distributive, and thus must admit type 1, 2, or 5. Furthermore, if
+   <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> is modular (which M3 itself is), types 1 and 5 are omitted from modular
+   intervals unless specific conditions apply (related to solvability). A variety is
+   congruence meet-semidistributive (SD(∧)) if and only if M3 is not embeddable in
+   Con(A) for any A∈V; SD(∧) is equivalent to omitting types {1,2}.8 Thus, the
+   presence of an M3 implies the variety is not SD(∧), meaning it must admit type 1
+   or type 2. If the interval containing M3 is known to be modular, this would point
+   towards type 2. The three covering quotients forming the "sides" of an M3 in a
+   modular lattice are perspective and thus must have the same type (from {2,3,4}).</li>
+</ul>
+<p>These geometric constraints offer a direct mechanism for L to enforce TCT types on
+<span class="arithmatex">\(A_G\)</span>. For example, if Ltarget​ contains an N5 configuration, then any group G
+representing Ltarget​ as <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> must be such that <span class="arithmatex">\(A_G\)</span> admits type 1 or 5. This
+admission of "wilder" types becomes an algebraic property of <span class="arithmatex">\(A_G\)</span>, which then needs to
+be translated into a cf-IE group property of G. The analysis of <span class="arithmatex">\(L_7\)</span> in DeMeo's paper
+implicitly uses such geometric reasoning; for instance, its non-modularity
+contributes to the derived properties of G.</p>
+<h3 id="33-the-role-of-solvableabelian-congruence-quotients-and-their-tct-type-correlates">3.3. The Role of Solvable/Abelian Congruence Quotients and their TCT Type Correlates</h3>
+<p>The notions of solvability and abelianness for congruence quotients are deeply
+connected to TCT types.</p>
+<ul>
+<li>
+<p>A prime quotient I[α, β] is <strong>abelian</strong> if the commutator [β, β] ≤ α. All type 2
+   (affine) quotients are abelian. Type 1 (unary) quotients can be either abelian or
+   non-abelian.2 Types 3, 4, and 5 are non-abelian.</p>
+</li>
+<li>
+<p>An interval I[δ, θ] is <strong>solvable</strong> if it has a composition series where each
+   prime factor is abelian. Consequently, if an interval is solvable, all its prime
+   factors must be of type 1 or type 2 [2 (Theorem 7.12)].</p>
+</li>
+</ul>
+<p>If the structure of a lattice L (when L ≅ <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>) forces certain intervals in
+<span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> to be solvable, or certain prime quotients to be abelian (or non-abelian),
+this imposes strict constraints on the TCT types present.  For instance, if L forces
+a prime quotient in <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> to be non-abelian, then that quotient cannot be of type 2
+and, if type 1, must be a non-abelian type 1. DeMeo's result that insolubility of G
+is IE <a href="#works-cited">1</a> is an example of how such properties might connect; if <span class="arithmatex">\(A_G\)</span> having only
+solvable congruence quotients implied G is solvable, then a lattice L forcing a
+non-solvable quotient in <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> might enforce G's insolubility. This link between
+the TCT commutator and group-theoretic solvability/nilpotency is a promising area for
+defining cf-IE properties.</p>
+<h2 id="4-assessing-the-combined-strategy-synergies-potential-and-challenges">4. Assessing the Combined Strategy: Synergies, Potential, and Challenges</h2>
+<p>This section critically evaluates the feasibility and potential impact of the
+combined DeMeo-TCT approach to the FLRP.</p>
+<h3 id="41-potential-for-progress-the-path-to-contradiction">4.1. Potential for Progress: The Path to Contradiction</h3>
+<p>The central strategy, as illuminated by DeMeo's Theorem 3.6 <a href="#works-cited">1</a>, is to identify a
+collection of cf-IE group properties whose intersection is empty. If such a
+collection {Pj​} exists, then the FLRP would have a negative answer. Tame Congruence
+Theory offers a powerful new toolkit to define candidate cf-IE properties.</p>
+<p>The synergy unfolds as follows:</p>
+<ol>
+<li>
+<p>DeMeo's framework provides the overarching group-theoretic strategy and the
+    parachute lattice construction as a conceptual tool for demonstrating how
+    multiple cf-IE properties might be simultaneously forced upon a group G if FLRP
+    has a positive answer.</p>
+</li>
+<li>
+<p>TCT provides a rich vocabulary of algebraic properties (Palg​) associated with the
+    structure of <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> (which is isomorphic to the lattice interval L ≅ [H, G]). 
+    These properties are based on TCT types, type configurations, solvability,
+    abelianness, and tail conditions.</p>
+</li>
+<li>
+<p>The research objective is to translate these TCT-derived algebraic properties of
+    <span class="arithmatex">\(A_G\)</span> into group-theoretic properties (<span class="arithmatex">\(P_{grp}\)</span>​) of G, and then to prove that these <span class="arithmatex">\(P_{grp}\)</span>​
+    are indeed cf-IE, i.e., enforceable by some lattice.</p>
+</li>
+</ol>
+<p>If a set of such TCT-derived cf-IE group properties, possibly combined with known
+cf-IE properties (like those from DeMeo's <span class="arithmatex">\(L_7\)</span> analysis <a href="#works-cited">1</a>), can be shown to be mutually
+incompatible (i.e., their intersection is empty), then Theorem 3.6 (C) would lead to
+a contradiction, implying FLRP has a negative answer. For example, one might find a
+TCT-derived property P1​ (enforced by lattice L1′​) implying G has a highly non-abelian
+structure, and another P2​ (enforced by L2′​) implying G has strong commutativity
+properties. If P1​ and P2​ are incompatible, then the parachute lattice P(Lany​,L1′​,L2′​)
+would be unrepresentable by any group as a core-free interval, falsifying statement
+(B) of Pálfy-Pudlák.</p>
+<p>A subtle but critical distinction must be maintained: a "forcing lattice" versus an
+"enforcing lattice." A specific lattice Ltarget (e.g., <span class="arithmatex">\(L_7\)</span> or a parachute lattice)
+might, by its structure, <em>force</em> <span class="arithmatex">\(A_G\)</span> (where Ltarget ≅ <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>) to exhibit certain TCT
+characteristics, which in turn imply a group property <span class="arithmatex">\(P_{grp}\)</span>​ for G.  However, for <span class="arithmatex">\(P_{grp}\)</span>​
+to be a cf-IE property in DeMeo's sense, there must exist some lattice <span class="arithmatex">\(L\_{\mathrm{enforce}}\)</span>
+(which could be different from Ltarget​) such that <em>any</em> group X representing <span class="arithmatex">\(L\_{\mathrm{enforce}}\)</span>
+as a core-free interval [K, X] must possess property <span class="arithmatex">\(P_{grp}\)</span>​. This two-layered lattice
+argumentation is essential for the logical integrity of applying Theorem 3.6. The
+TCT-derived cf-IE properties are somewhat self-referential in this regard: the
+"enforcing lattice" <span class="arithmatex">\(L_{P_i}\)</span> for a TCT-derived property <span class="arithmatex">\(P_i\)</span> would itself need to be a
+lattice whose structure inherently forces specific TCT features on any algebra whose
+congruence lattice it is.</p>
+<p>DeMeo's analysis of <span class="arithmatex">\(L_7\)</span> <a href="#works-cited">1</a> already provides a set of potent cf-IE properties (G is
+primitive, insoluble, <span class="arithmatex">\(C_G(N) = 1\)</span>, etc.). If TCT analysis of <span class="arithmatex">\(L_7\)</span> (or other lattices) can
+yield <em>new, independent</em> cf-IE properties of G, the intersection of required
+properties shrinks, making a contradiction more attainable.  For instance, <span class="arithmatex">\(L_7\)</span> is
+non-modular, implying <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> must admit types 1 or 5; if this admission can be
+translated into a new cf-IE group property not already covered by DeMeo's analysis,
+progress is made.</p>
+<p><strong>Table 2. Known and Candidate TCT-Derived cf-IE Properties</strong>.
+This table outlines existing cf-IE properties and proposes candidate properties
+derivable from TCT, highlighting the crucial link to group G and the nature of the
+enforcing lattice.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property Type</th>
+<th style="text-align: left;">Property Description (for Group G or Algebra <span class="arithmatex">\(A_G\)</span>≅G/H)</th>
+<th style="text-align: left;">Known/ Candidate</th>
+<th style="text-align: left;">Enforcing Lattice/Condition (Hypothesized for Candidates)</th>
+<th style="text-align: left;">Notes / Connection of <span class="arithmatex">\(A_G\)</span> property to G</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">DeMeo (Known)</td>
+<td style="text-align: left;">G is insoluble</td>
+<td style="text-align: left;">Known</td>
+<td style="text-align: left;">Pálfy's lattice LS​ (not representable by soluble groups) 1</td>
+<td style="text-align: left;">Direct group property.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeMeo (Known)</td>
+<td style="text-align: left;">G is not An​ or Sn​ (for any n)</td>
+<td style="text-align: left;">Known</td>
+<td style="text-align: left;">Lattices from Basile, Aschbacher &amp; Shareshian 1</td>
+<td style="text-align: left;">Direct group property.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeMeo (Known, via <span class="arithmatex">\(L_7\)</span>)</td>
+<td style="text-align: left;">G is subdirectly irreducible</td>
+<td style="text-align: left;">Known if <span class="arithmatex">\(L_7 ≅ [H, G]\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(L_7\)</span> 1</td>
+<td style="text-align: left;">Property of <span class="arithmatex">\(G\)</span> if <span class="arithmatex">\(L_7\)</span> is the interval.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeMeo (Known, via <span class="arithmatex">\(L_7\)</span>)</td>
+<td style="text-align: left;">For any <span class="arithmatex">\(1 = N ◃ G\)</span>, <span class="arithmatex">\(C_G(N) = 1\)</span></td>
+<td style="text-align: left;">Known if <span class="arithmatex">\(L_7 ≅ [H, G]\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(L_7\)</span> 1</td>
+<td style="text-align: left;">Property of <span class="arithmatex">\(G\)</span> if <span class="arithmatex">\(L_7\)</span> is the interval.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TCT-derived (Cand.)</td>
+<td style="text-align: left;"><span class="arithmatex">\(V(A_G)\)</span> omits TCT type 1 (is a Taylor variety)</td>
+<td style="text-align: left;">Candidate</td>
+<td style="text-align: left;">A lattice Lno−1​ whose structure forces any Con(A)≅Lno−1​ to omit type 1.</td>
+<td style="text-align: left;"><em>Challenge</em>: Translate "V(G/H) has Taylor term" to a structural property of G. May relate to G having no "unary-like" actions or specific chief factor properties.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TCT-derived (Cand.)</td>
+<td style="text-align: left;"><span class="arithmatex">\(V(A_G)\)</span> omits TCT types {1,5} (satisfies a non-trivial congruence identity)</td>
+<td style="text-align: left;">Candidate</td>
+<td style="text-align: left;">A lattice Lno−1,5​ whose structure forces omission of types {1,5}.</td>
+<td style="text-align: left;"><em>Challenge</em>: Translate "V(G/H) satisfies cong. identity X" to a property of G.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TCT-derived (Cand.)</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> contains an N5 sublattice (hence types 1 or 5 must be present in <span class="arithmatex">\(V(A_G)\)</span>)</td>
+<td style="text-align: left;">Candidate</td>
+<td style="text-align: left;">Any non-modular lattice LNM​.</td>
+<td style="text-align: left;">If LNM​≅[H, G], then V(G/H) has types 1 or 5. Could force G to be non-CM (if tails are non-empty) or relate to specific simple sections of G.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TCT-derived (Cand.)</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> is modular (hence <span class="arithmatex">\(V(A_G)\)</span> omits types 1,5 and has empty tails for types {2,3,4})</td>
+<td style="text-align: left;">Candidate</td>
+<td style="text-align: left;">A modular, non-distributive lattice LM​.</td>
+<td style="text-align: left;">If LM​≅[H, G], V(G/H) is congruence modular. Strong constraint. May imply G is solvable or has specific chief factor structures (e.g., only affine or simple non-abelian of specific TCT types).</td>
+</tr>
+<tr>
+<td style="text-align: left;">TCT-derived (Cand.)</td>
+<td style="text-align: left;">An interval I[α,β] in <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> is solvable (all prime factors type 1 or 2)</td>
+<td style="text-align: left;">Candidate</td>
+<td style="text-align: left;">A lattice L whose structure forces a specific interval to be solvable in any Con(A)≅L.</td>
+<td style="text-align: left;">Forces local structure of Con(G/H) to be types 1 or 2. <span class="arithmatex">\(A_G\)</span> has locally abelian/affine structure. Impact on G's derived series or commutator structure?</td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-methodological-strengths">4.2. Methodological Strengths</h3>
+<p>The proposed combination of DeMeo's enforceability framework with TCT offers
+significant methodological advantages. TCT provides a systematic and deeply
+structural way to analyze <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> (which is isomorphic to the given lattice interval
+L). This goes beyond classical lattice theory, offering a classification of local
+algebraic behaviors (the five types) and rules for how these types are distributed
+within the congruence lattice (e.g., type preservation under projectivity,
+constraints imposed by M3 or N5 subconfigurations) [<a href="#works-cited">2</a> (Lemmas 5.19,
+6.2--6.6, 6.9, 6.10)].  The connection of TCT types to Malt'sev conditions and
+congruence identities provides a rich source of strong algebraic constraints on <span class="arithmatex">\(A_G\)</span>.6
+DeMeo's framework, particularly Theorem 3.6, then provides the crucial linkage from
+these (potentially new) algebraic properties of <span class="arithmatex">\(A_G\)</span> (if they can be translated into
+group-theoretic terms) to the FLRP itself.  The Pálfy-Pudlák theorem, combined with
+DeMeo's core-free condition, ensures that the TCT analysis of L ≅ <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> is directly
+relevant to the FLRP.</p>
+<h3 id="43-anticipated-hurdles-and-challenges">4.3. Anticipated Hurdles and Challenges</h3>
+<p>Despite the promise, several substantial hurdles must be overcome.</p>
+<ol>
+<li>
+<p><strong>The Translation Problem</strong>. The foremost challenge is translating algebraic
+    properties of <span class="arithmatex">\(A_G\)</span> (the G-set ⟨G/H, ϕ(G)⟩), derived from TCT analysis of L ≅ <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>, 
+    into meaningful and provably cf-IE <em>group-theoretic properties</em> of G.
+    For example, if TCT implies <span class="arithmatex">\(A_G\)</span> must have a Taylor term (because Con(AG) omits
+    type 1), it is not immediately clear what specific structural property this
+    imposes on G itself, nor how to prove that this G-property is cf-IE by some other
+    lattice. This step requires bridging universal algebra with group theory in a
+    non-trivial way.</p>
+</li>
+<li>
+<p><strong>Proving cf-IE Nature</strong>. Even if a candidate group-theoretic property <span class="arithmatex">\(P\_{grp}\)</span>
+    is derived from TCT considerations, proving it is cf-IE (i.e., finding a lattice
+    <span class="arithmatex">\(L\_{\mathrm{enforce}}\)</span> that enforces <span class="arithmatex">\(P_{grp}\)</span>​ on any group X representing
+    <span class="arithmatex">\(L\_{\mathrm{enforce}}\)</span>​ as a core-free interval) is a significant task.  DeMeo's
+    paper provides examples, but each such proof is a research result in its own
+    right.<a href="#works-cited">1</a></p>
+</li>
+<li><strong>Complexity of TCT:</strong> TCT is a highly technical and intricate theory. Correctly
+    applying its full depth to derive robust enforceable properties, and then
+    translating these, requires profound expertise.</li>
+<li><strong>Demonstrating Empty Intersection:</strong> The ultimate goal of finding a collection
+     of cf-IE group properties whose intersection is provably empty remains a grand
+     challenge in group theory. TCT may help identify new candidate properties, but
+     the final proof of an empty intersection is a group-theoretic problem.</li>
+<li><strong>Group Representability of Enforcing Lattices:</strong> For a TCT-derived cf-IE
+     property to be useful in DeMeo's strategy (e.g., Conjecture 3.1 regarding a
+     property and its negation <a href="#works-cited">1</a>), the lattice
+     <span class="arithmatex">\(L\_{\mathrm{enforce}}\)</span>​ that enforces it must itself be "group representable"
+     (isomorphic to an interval in some group's subgroup lattice). Establishing this
+     for potentially complex lattices arising from TCT considerations may not be
+     straightforward.</li>
+</ol>
+<p>The path from the TCT properties of Con(G/H) to cf-IE properties of G is the most
+critical and least explored part of this proposed strategy. It requires a deep
+understanding of how the action of G on G/H reflects back onto the structure of G
+itself, in a way that is conditionable by lattice interval structures.</p>
+<h2 id="5-concluding-analysis-and-strategic-recommendations">5. Concluding Analysis and Strategic Recommendations</h2>
+<h3 id="51-overall-assessment-of-the-combined-strategys-promise">5.1. Overall Assessment of the Combined Strategy's Promise</h3>
+<p>The strategy of integrating Tame Congruence Theory with DeMeo's framework of
+enforceable properties offers a novel and potentially powerful approach to the Finite
+Lattice Representation Problem.  TCT provides a sophisticated lens to analyze the
+structure of <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> (where <span class="arithmatex">\(A_G\)</span> is the algebra whose congruence lattice is isomorphic
+to the given interval [H, G]), potentially revealing algebraic properties of <span class="arithmatex">\(A_G\)</span> that
+were previously inaccessible.  DeMeo's Theorem 3.6 provides a clear pathway: if a
+collection of cf-IE group properties can be found whose intersection is empty, the
+FLRP would be negatively resolved.  The primary promise of the combined strategy lies
+in TCT's ability to furnish new candidate algebraic properties of <span class="arithmatex">\(A_G\)</span>, which, if
+successfully translated into cf-IE group properties of G, could enrich the set of
+constraints applicable under Theorem 3.6, thereby increasing the chances of finding
+such an empty intersection.</p>
+<p>The strength of this combined approach is its multi-layered attack, leveraging the
+Pálfy-Pudlák theorem to connect the abstract lattice problem to group theory, DeMeo's
+framework to define enforceability within group theory, and TCT to provide deep
+structural insights into the congruence lattices that bridge these domains.</p>
+<h3 id="52-recommendations-for-specific-research-directions">5.2. Recommendations for Specific Research Directions</h3>
+<p>To realize the potential of this combined strategy, future research should focus on several key areas:</p>
+<ol>
+<li>
+<p><strong>The Translation Problem</strong>. This is the most critical research direction.
+    Methodologies need to be developed to rigorously translate TCT-derived properties
+    of the algebra <span class="arithmatex">\(A_G\)</span> = ⟨G/H, ϕ(G)⟩ (such as omitting specific TCT types, satisfying
+    certain Malt'sev conditions, or having specific local congruence geometries) into
+    well-defined group-theoretic properties of G. This involves understanding how the
+    structure of the G-set G/H and its TCT characteristics reflect back onto the
+    intrinsic structure of G.</p>
+<ul>
+<li>
+<p><strong>Question</strong>. If <span class="arithmatex">\(V(A_G)\)</span> is a Taylor variety (omits type 1), what does this imply
+   about the normal subgroup structure, solvability, or permutational properties
+   of <span class="arithmatex">\(G\)</span> itself?</p>
+</li>
+<li>
+<p><strong>Question</strong>. If <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span> is congruence modular 
+   (implying <span class="arithmatex">\(\mathrm{typ}(V(A_G)) ⊆ {2,3,4}\)</span> and empty tails), 
+   what restrictions does this place on <span class="arithmatex">\(G\)</span> (e.g., related to G being
+   solvable, or having specific types of chief factors)?</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Identifying and Proving cf-IE Nature of TCT-Derived Group Properties</strong>. 
+    Once a group property <span class="arithmatex">\(P_{grp}\)</span>​ is hypothesized from TCT analysis of <span class="arithmatex">\(A_G\)</span>, it
+    must be proven to be cf-IE.  This requires finding a lattice
+    <span class="arithmatex">\(L_{\mathrm{enforce}}\)</span>​ such that <span class="arithmatex">\(L_{\mathrm{enforce}} ​≅ [K, X]\)</span> (<span class="arithmatex">\(K\)</span> core-free)
+    implies <span class="arithmatex">\(X ⊨ P_{grp}\)</span>​. This may involve constructing specific lattices whose
+    structure inherently forces the desired TCT behavior on any algebra representing
+    them, which in turn forces <span class="arithmatex">\(P_{grp}\)</span>​.</p>
+</li>
+<li>
+<p><strong>Exploiting Geometric Constraints in Labeled Congruence Lattices</strong>.
+    A systematic investigation into how specific lattice configurations (e.g., M3,
+    N5, more complex patterns of perspectivity or projectivity within
+    <span class="arithmatex">\(L ≅ \mathrm{Con}(A_G)\)</span>) force particular TCT type assignments or type omissions
+    is needed. The rules from Hobby &amp; McKenzie's Chapter 6 on labeled congruence
+    lattices are foundational here.<a href="#works-cited">2</a></p>
+<ul>
+<li><strong>Question</strong>. If a lattice L contains projective prime quotients I1​ and I2​,
+TCT implies typ(I1​) = typ(I2​) (under suitable conditions).  Can this type
+equality, for specific types forced by L's structure, be translated into a cf-IE
+property of G?</li>
+</ul>
+</li>
+<li>
+<p><strong>Re-analysis of Critical Lattices (e.g., <span class="arithmatex">\(L_7\)</span>)</strong>. Apply a full TCT analysis to
+    lattices like <span class="arithmatex">\(L_7\)</span>.  DeMeo's analysis of <span class="arithmatex">\(L_7\)</span> derived several cf-IE
+    properties.<a href="#works-cited">1</a>  TCT might reveal further constraints on
+    <span class="arithmatex">\(\mathrm{Con}(A_G) ≅ L_7\)</span> (e.g., specific type occurrences due to its
+    non-modularity or M3 sublattices) which could translate into additional cf-IE
+    properties of G, potentially strengthening the argument for <span class="arithmatex">\(L_7\)</span>'s
+    non-representability or leading to a contradiction.</p>
+</li>
+<li>
+<p><strong>Investigating the "Empty Tails" Condition</strong>. The property that "<span class="arithmatex">\(A_G\)</span> has only
+    empty-tailed minimal sets (for certain types)" is a strong structural condition
+    linked to congruence modularity.<a href="#works-cited">3</a>  Research should explore if
+    this condition, or aspects of it, can be translated into a cf-IE group property.</p>
+</li>
+<li>
+<p><strong>Commutator Theory and TCT Types</strong>. The relationship between solvable/abelian
+    congruence quotients (defined via the commutator) and TCT types 1 and 2 is
+    well-established.<a href="#works-cited">2</a>  If a lattice L forces certain
+    commutator-theoretic properties on <span class="arithmatex">\(\mathrm{Con}(A_G)\)</span>, this implies restrictions
+    on types 1 and 2. This could lead to cf-IE properties related to the derived
+    series or nilpotency class of G.</p>
+</li>
+</ol>
+<p>Progress in these directions, particularly in systematically bridging the gap between
+TCT properties of <span class="arithmatex">\(A_G\)</span> and cf-IE properties of G, holds the most promise for
+leveraging this combined strategy to make significant advancements on the Finite
+Lattice Representation Problem. A "negative" TCT result, such as identifying a TCT
+type-labeling pattern that is impossible for any finite congruence lattice, could
+also be impactful if a group interval representation were shown to necessitate such a
+pattern.</p>
+<h3 id="works-cited"><strong>Works cited</strong></h3>
+<ol>
+<li>Interval Enforceable Properties of Finite Groups, William DeMeo, 2012; <a href="https://arxiv.org/abs/1205.1927v3">arXiv: 1205.1927v3</a>.</li>
+<li>The Structure of Finite Algebras by David Hobby and Ralph McKenzie, accessed May 26, 2025, <a href="https://math.hawaii.edu/~ralph/Classes/619/HobbyMcKenzie-FiniteAlgebras.pdf">https://math.hawaii.edu/\~ralph/Classes/619/HobbyMcKenzie-FiniteAlgebras.pdf</a>  </li>
+<li>MODULARITY PREVENTS TAILS 1. Introduction Tame congruence theory is a framework developed to study the local polynomial structur, accessed May 26, 2025, <a href="https://www.ams.org/journals/proc/1999-127-01/S0002-9939-99-04882-0/S0002-9939-99-04882-0.pdf">https://www.ams.org/journals/proc/1999-127-01/S0002-9939-99-04882-0/S0002-9939-99-04882-0.pdf</a>  </li>
+<li>(PDF) Algebraic Model Theory - ResearchGate, accessed May 26, 2025, <a href="https://www.researchgate.net/publication/245346555_Algebraic_Model_Theory">https://www.researchgate.net/publication/245346555_Algebraic_Model_Theory</a>  </li>
+<li>Minimal algebra - Wikipedia, accessed May 26, 2025, <a href="https://en.wikipedia.org/wiki/Minimal_algebra">https://en.wikipedia.org/wiki/Minimal_algebra</a>  </li>
+<li>math.hawaii.edu, accessed May 26, 2025, <a href="https://math.hawaii.edu/~ralph/Classes/619/OmittingTypesMaltsev.pdf">https://math.hawaii.edu/\~ralph/Classes/619/OmittingTypesMaltsev.pdf</a>  </li>
+<li>Characterizations of several Maltsev Conditions - Durham Research Online, accessed May 26, 2025, <a href="https://durham-repository.worktribe.com/OutputFile/1362095">https://durham-repository.worktribe.com/OutputFile/1362095</a>  </li>
+<li>MALTSEV CONDITIONS FOR GENERAL CONGRUENCE MEET-SEMIDISTRIBUTIVE ALGEBRAS • idempotence - Cambridge University Press, accessed May 26, 2025, <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F5754B556BE5AE35852849394371CD9B/S0022481221000141a.pdf/maltsev_conditions_for_general_congruence_meetsemidistributive_algebras.pdf">https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F5754B556BE5AE35852849394371CD9B/S0022481221000141a.pdf/maltsev_conditions_for_general_congruence_meetsemidistributive_algebras.pdf</a>  </li>
+<li>MALTSEV CONDITIONS FOR GENERAL CONGRUENCE MEET-SEMIDISTRIBUTIVE ALGEBRAS • idempotence - ULB : Dok, accessed May 26, 2025, <a href="https://ulb-dok.uibk.ac.at/download/pdf/7184498.pdf">https://ulb-dok.uibk.ac.at/download/pdf/7184498.pdf</a>  </li>
+<li>arXiv:2011.07879v1 [math.LO] 16 Nov 2020, accessed May 26, 2025, <a href="https://arxiv.org/pdf/2011.07879">https://arxiv.org/pdf/2011.07879</a>  </li>
+<li>math.colorado.edu, accessed May 26, 2025, <a href="https://math.colorado.edu/~kearnes/Papers/kkv1fin.pdf">https://math.colorado.edu/\~kearnes/Papers/kkv1fin.pdf</a>  </li>
+<li>math.hawaii.edu, accessed May 26, 2025, <a href="https://math.hawaii.edu/~ralph/Commutator/comm.pdf">https://math.hawaii.edu/\~ralph/Commutator/comm.pdf</a>  </li>
+<li>a guide for mortals to tame congruence theory, accessed May 26, 2025, <a href="https://www.math.u-szeged.hu/~mmaroti/okt/2008o/writeup.pdf">https://www.math.u-szeged.hu/\~mmaroti/okt/2008o/writeup.pdf</a>  </li>
+<li>accessed December 31, 1969, <a href="https://math.hawaii.edu/~jb/math616s01/tct_notes.pdf">https://math.hawaii.edu/\~jb/math616s01/tct_notes.pdf</a>  </li>
+<li>arxiv.org, accessed May 26, 2025, <a href="https://arxiv.org/pdf/math/9609219">https://arxiv.org/pdf/math/9609219</a>  </li>
+<li>(PDF) An Easy Way to Minimal Algebras - ResearchGate, accessed May 26, 2025, <a href="https://www.researchgate.net/publication/228667296_An_Easy_Way_to_Minimal_Algebras">https://www.researchgate.net/publication/228667296_An_Easy_Way_to_Minimal_Algebras</a></li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 William DeMeo
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.code.copy", "admonition.details"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/gemini-features.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
