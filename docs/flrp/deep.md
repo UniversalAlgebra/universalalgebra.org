@@ -296,7 +296,7 @@ $I[γ_i, γ_{i+1}]$ is abelian.[[12](#works-cited)]
    quotients to be abelian (or non-abelian), this imposes strict TCT type constraints
    on $\mathrm{Con}(A_G)$.
 
-### 2.3. The Notion of "Tameness" and the Significance of "Empty Tails" in Minimal Sets
+### 2.3. Tameness and the Significance of Empty Tails in Minimal Sets
 
 The term "tame" in TCT broadly refers to the well-behaved, structured nature of local
 polynomial operations, particularly on the **body** of an (α, β)-minimal set $U$. TCT
@@ -311,8 +311,8 @@ tails, especially for types 1 or 5, is intrinsically linked to failures of congr
 modularity. For instance, if a minimal set of type $i ∈ \{2, 3, 4, 5\}$ has a non-empty
 tail, it forces the existence of a pentagonal sublattice N5 (a hallmark of
 non-modularity) of type $i$ in the congruence lattice of some subalgebra of $A^2$.
-Conversely, strong conditions on the labeled congruence lattice, such as the absence
-of such pentagons, can force tails to be empty.[[3](#works-cited)]
+In the other direction, strong conditions on the labeled congruence lattice, such as
+the absence of pentagons, can force tails to be empty.[[3](#works-cited)]
 
 For a locally finite variety $V$ to be **congruence modular**, two conditions must be
 met: its type set must be restricted to {2, 3, 4} (i.e., types 1 and 5 must be
@@ -344,8 +344,10 @@ $L ≅ [H, G]$ when $H$ is core-free).
    algebra $A$ for which $\mathrm{Con}(A) ≅ L$ to omit certain TCT types from its type set (or
    from the type set of the variety $V(A)$ it generates), this leads to strong
    algebraic consequences. For instance:
+
    1.  If $L$ forces $V(A_G)$ to omit **type 1** (unary type), then $A_G$ must
        possess a Taylor term, and $V(A_G)$ is a Taylor variety.[[6](#works-cited)]
+
    2.  If $L$ forces $V(A_G)$ to omit **types {1,5}** (unary and semilattice types), then
        $A_G$ must satisfy a non-trivial congruence identity and possess a Hobby-McKenzie
        term.[[6](#works-cited)] The critical step is then to determine if "$G$ is a
@@ -354,6 +356,7 @@ $L ≅ [H, G]$ when $H$ is core-free).
        enforceable by some (potentially different) lattice $L′$. This translation
        from an algebraic property of $A_G$ to a cf-IE group property of $G$
        represents a significant theoretical challenge. 
+
 +  **Properties Based on Type Presence**. Conversely, if the structure of $L$ forces
    $\mathrm{Con}(A_G)$ to exhibit certain TCT types, this can also lead to enforceable
    properties. For example, if $L$ is a non-modular lattice, then $\mathrm{Con}(A_G)$ must be
