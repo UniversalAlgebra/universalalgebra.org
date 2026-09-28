@@ -13,7 +13,8 @@ Use the navigation menu to explore the different facets of the FLRP:
 * **Core Concepts:** Understand the foundational definitions.
 * **History & Pálfy-Pudlák:** Trace the timeline of key discoveries.
 * **Current Status & Counterexamples:** Learn about the unsolved nature and the hunt for a counterexample like L7.
-* **Tame Congruence Theory:** Discover the powerful structure theory used to analyze the problem.
+* **Tame Congruence Theory:** Meet the structure theory of finite algebras, and see why it says little about this problem.
+* **Current & Future Research:** Read the plan being pursued, and follow the links to the machine-checked work.
 * **Partial Results:** See what parts of the problem *have* been solved.
 
 
