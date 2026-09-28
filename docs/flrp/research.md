@@ -1,32 +1,46 @@
 # Current & Future Research
 
-The Finite Lattice Representation Problem remains a vital open question. Its resolution would significantly impact our understanding of finite algebraic structures. This section recaps its importance and outlines promising avenues for future research, including current work on finding a counterexample.
+The Finite Lattice Representation Problem remains open, and the prevailing
+conjecture is that its answer is negative: some finite lattice is the
+congruence lattice of no finite algebra.  The research described on these pages
+pursues that conjecture through the group-theoretic form of the problem given
+by the Pálfy–Pudlák theorem, and it does so inside a proof assistant, so that
+the logic of the strategy, the theorems it borrows, and the computations it
+relies on are all checked by machine.
 
-### Potential Avenues for Future Research
+### The approach in brief
 
-* **Refining TCT Applications:** Developing more explicit ways Tame Congruence Theory can rule out candidate lattices.
-* **New Constructive Techniques:** Searching for novel methods to build finite algebras for specific lattice structures.
-* **Identifying "Forbidden Substructures":** Searching for lattice configurations inherently non-representable by finite algebras.
-* **Investigating Problem Variations:** Examining restricted versions of FLRP (e.g., for specific algebra types or varieties).
++  **Interval enforceable properties.**  A lattice shape can *force* structure
+   on any finite group that carries it as an interval $[H, G]$ over a core-free
+   subgroup $H$.  Our paper [Interval enforceable properties of finite
+   groups](https://arxiv.org/abs/1205.1927) shows that the problem has a
+   negative answer as soon as finitely many such enforced properties are found
+   that no finite group can have at once.
++  **A catalog and a hunt.**  The enforced properties known from the literature
+   are collected in a machine-readable catalog, each with its source read in
+   the primary text, and the hunt for an incompatible family runs over that
+   catalog under explicit constraints, the strongest of which is that every
+   admissible class contains wreath products of every finite simple group.
++  **Computation as certificates.**  Group-theoretic searches in GAP supply
+   representations of small lattices, and each is re-verified in Agda from
+   finite data before it is used.  The seven-element frontier closed in 2026
+   with a representation of the lattice $L_7$, and the smallest parachute
+   lattices are now known to be representable as well.
 
-<!--
-<div class="md-source-date">
-  <hr>
-  <button id="gemini-future-button" class="md-button md-button--primary">✨ Suggest Novel Research Angles</button>
-  <div id="gemini-future-output-loading" class="loading-spinner" style="display: none;"></div>
-  <div id="gemini-future-output" class="gemini-output" style="display: none;"></div>
-  <hr>
-</div>
--->
+### Where it stands
 
-### Our Approach: Finding a Counterexample
+The details, the results to date, and the ordered list of paths being tried
+are on the [next page](deep.md).  The work itself is in the
+[agda-algebras](https://github.com/ualib/agda-algebras) repository, whose
+[tracking issue](https://github.com/ualib/agda-algebras/issues/451) and
+[goal issue](https://github.com/ualib/agda-algebras/issues/578) record its
+progress.
 
-The prevailing conjecture is that the FLRP is false, meaning a counterexample must exist. Our current research focuses on two promising theoretical frameworks for identifying such a counterexample.
+### A route that was tried and withdrawn
 
-#### 1. The Tame Congruence Theory (TCT) Approach
-As detailed on the TCT page, this theory provides a powerful "no-go" framework. The strategy is to analyze the structural requirements TCT imposes on a congruence lattice. If a candidate lattice, such as L7, implies a local configuration of the five TCT types that is proven to be impossible within a single finite algebra, then L7 would be confirmed as a non-representable counterexample.
-
-#### 2. The Interval Enforceable Properties Approach
-Our paper on ["Interval Enforceable Properties"](https://arxiv.org/abs/1205.1927) proposes another "no-go" strategy from the group-theoretic perspective, building on the Pálfy-Pudlák theorem.  The core idea is to identify properties of lattices that, if they were to appear as an interval $[H, G]$ in a subgroup lattice, would enforce strong, verifiable conditions on the structure of the finite group $G$.
-
-
+An earlier version of these pages proposed tame congruence theory as a source
+of new enforceable properties.  It is not one: the algebras the problem reduces
+to are transitive $G$-sets, which are unary, and on unary algebras every prime
+quotient has type 1 and every quotient is abelian, so the theory's constraints
+cannot tell one interval from another.  The [next page](deep.md) says what
+survives of the idea.
