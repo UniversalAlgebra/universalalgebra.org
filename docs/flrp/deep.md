@@ -110,10 +110,13 @@ construction up to the meta-theorem itself, with the imported theorems
    structure theorem for such intervals applies and agrees with the framework's
    own Lemma 3.7 while adding information about the action on the socle; his
    reduction theorems, which push minimal representations toward almost simple
-   groups, concern a narrower class that no parachute belongs to, for a reason
-   that is structural rather than technical.  The dictionary is recorded in the
-   catalog's survey note (its § 4.12), together with what survives of the
-   reductions for parachutes.
+   groups, are stated for a narrower class that no parachute belongs to.  A
+   re-reading of the proof (2026-09-28) found that the argument itself reaches
+   the *coatomistic* parachutes, those in which every element is a meet of
+   maximal ones, with one caveat about the dual lattice; the first reading had
+   missed this on a dropped symbol in the extracted text.  The dictionary is
+   recorded in the catalog's survey note (its § 4.12 and § 4.13), and the
+   parachute theorem in its own note ([the parachute analog of Theorem 3][t3]).
 
 ## 4. The plan
 
@@ -124,10 +127,16 @@ working details:
 
 1.  **A parachute version of Aschbacher's reduction.**  His theorem that a
     minimal representation of a suitable disconnected lattice is almost simple
-    or arises from a signalizer lattice does not reach parachutes.  Whether a
-    parachute analog exists is the first question, and either answer is
-    decisive for the strategy: a reduction would import the machinery of
-    almost simple groups, and a proof that none exists would close the avenue.
+    or arises from a signalizer lattice is stated for a class no parachute
+    belongs to.  The first pass over this path found that the argument
+    transfers to the coatomistic parachutes: a minimal representation of such
+    a parachute is almost simple, or a signalizer lattice, or realizes the
+    dual lattice in a smaller group.  The smallest such parachute has eight
+    elements, two four-element Boolean canopies, and is an interval in none of
+    the 414 groups of GAP's library of tables of marks.  The reduction imports
+    the machinery of almost simple groups; it does not shorten it, and the
+    almost simple case is where the path now stands ([the pass's
+    record][paths]).
 2.  **Labeled intervals.**  Each covering pair of an interval $[H, G]$ carries a
     primitive permutation group, and each coatom carries the O'Nan–Scott type
     of a primitive action of $G$.  The known core-free parachute
@@ -135,7 +144,12 @@ working details:
     of maximal overgroups is this labeling for the coatoms.  The task is to
     tabulate the labels on every known representation, find the rules a
     parachute's shape imposes on them, and only then propose an enforceable
-    property that separates groups by their labels.
+    property that separates groups by their labels.  The first pass tabulated
+    them: in an almost simple group the label carries nothing, the Kurzweil
+    wreaths label every coatom of diagonal type, and a wreathed almost simple
+    representation labels every coatom of product type; the rule the shape
+    imposes is that the type is the same at every coatom once two canopies
+    have two coatoms each, so the label alone does not separate.
 3.  **Shareshian's Conjecture D at its smallest case.**  Aschbacher reduced the
     conjecture that a certain family of disconnected lattices is never an
     interval to two questions about almost simple groups; both are settled for
@@ -198,4 +212,6 @@ whose labels are permutation groups rather than tame-congruence types.
 [rp3]: https://github.com/ualib/agda-algebras/blob/master/docs/notes/flrp-rp3-hunt.md
 [rp4]: https://github.com/ualib/agda-algebras/blob/master/docs/notes/flrp-rp4-wreath.md
 [tracking]: https://github.com/ualib/agda-algebras/issues/451
+[t3]: https://github.com/ualib/agda-algebras/blob/master/docs/notes/flrp-parachute-theorem3.md
+[paths]: https://github.com/ualib/agda-algebras/blob/master/docs/notes/flrp-m6-27-paths.md
 [goal]: https://github.com/ualib/agda-algebras/issues/578
